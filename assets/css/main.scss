@@ -1,0 +1,115 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/**
+ * Basic styling
+ */
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 100;
+    color: #333;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* bibtex */
+
+.bibtex_display{
+  display: block;
+  overflow: auto;
+}
+
+.bibtexentry{
+  overflow: auto;
+}
+
+/* hightlights */
+.bibtex_entry_thumbnail{
+  width: 48%;
+  float: left;
+  border: 1px solid #ccc;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+
+.bibtex_entry_thumbnail .bib_thumbnail{
+  width: 30%;
+  margin: 9px;
+  float: left;
+}
+.bibtex_entry_thumbnail .bib_thumbnail .thumbnail{
+  padding: 0px; 
+  margin: 0px; 
+}
+
+.bibtex_entry_thumbnail .title{
+  display: block;
+  font-size: 1.2em;
+  width: 98%;
+  font-weight: bold;
+  margin: 0.1em 0.0em 0.9em 0.0em;
+}
+.bibtex_entry_thumbnail .description{
+  display: block;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.bibtex_entry_thumbnail .author{
+  display: block;
+  font-style: italic;
+  color: #555;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+.bibtex_entry_thumbnail .publishin{
+  color: #555;
+  font-size: 0.9em;
+  font-weight: bold;  
+}
+
+.bibtex_entry_thumbnail .options{
+  text-align: right;
+}
+
+@media (max-width: 48em){
+    .bibtex_entry_thumbnail{
+      width: 90%;
+      float: left;
+      border: 1px solid #ccc;
+      margin: 0.5em;
+      padding: 0.5em;
+      font-size: 0.8em;
+    }
+}
+
+/* full list */
+.bibtex_entry_full{
+  display: block;
+  width: 90%;
+  margin-left: 0.5em;
+  font-size: 0.8em;
+  margin-bottom: 0.4em;
+}
+.bibtex_display .group_header{
+  font-weight: bold;
+  font-size: 1.0em;
+  margin-bottom: 0.5em;
+}
+
+.bibtex_entry_full .title{
+  font-weight: bold;
+}
+.bibtex_entry_full .author{
+  font-style: italic;
+}
+/* end bibtex template styles*/
+
