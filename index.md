@@ -1,8 +1,8 @@
 ---
 layout: splash
-title: Laboratory of Robotics and Automation
+title: Laboratory of Automation and Robotics
 header:
-  image: /files/images/logo/header.jpg
+  image: /files/images/logo/header2.jpg
  
 published: true
 ---
