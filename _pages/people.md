@@ -12,7 +12,12 @@ people_staff:
   - image_path: /files/images/people/riccardo_zanella.jpg
     alt: Dr. Riccardo Zanella
     title: Dr. Riccardo Zanella
-    excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/riccardo.zanella2/en)'
+    excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/riccardo.zanella2/en)' 
+  - image_path: /files/images/people/roberto meattini.png 
+    alt: Dr. Roberto Meattini
+    title: Dr. Roberto Meattini
+    excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/roberto.meattini2)'
+people_phd:
   - image_path: /files/images/people/alessio_caporali.jpg
     alt: Alessio Caporali
     title: Alessio Caporali
@@ -69,8 +74,10 @@ published: true
 # People
 
 ## Staff
-
 {% include feature_row id="people_staff" class="people_feature_row" %}
+
+## PhD Student
+{% include feature_row id="people_phd" class="people_feature_row" %}
 
 ## Past members
 
