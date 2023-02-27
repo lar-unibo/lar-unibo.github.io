@@ -13,7 +13,7 @@ people_staff:
     alt: Dr. Riccardo Zanella
     title: Dr. Riccardo Zanella
     excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/riccardo.zanella2/en)' 
-  - image_path: /files/images/people/roberto meattini.png 
+  - image_path: /files/images/people/roberto_meattini.jpg 
     alt: Dr. Roberto Meattini
     title: Dr. Roberto Meattini
     excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/roberto.meattini2)'
