@@ -16,7 +16,7 @@ minimal_mistakes_skin    :  "default" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Laboratory of Automation and Robotics"
+title                    : "LAR @ UNIBO"
 title_separator          : "-"
 name                     : "LAR"
 description              : "Website for the LAR at the DEI-UNIBO"
@@ -78,7 +78,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : 
 facebook:
   username               :
   app_id                 :
