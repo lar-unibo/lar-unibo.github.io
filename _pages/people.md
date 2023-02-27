@@ -13,6 +13,14 @@ people_staff:
     alt: Dr. Riccardo Zanella
     title: Dr. Riccardo Zanella
     excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/riccardo.zanella2/en)'
+  - image_path: /files/images/people/alessio_caporali.jpg
+    alt: Alessio Caporali
+    title: Alessio Caporali
+    excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/alessio.caporali2/en)'
+  - image_path: /files/images/people/kevin_galassi.jpg
+    alt: Kevin Galassi
+    title: Kevin Galassi
+    excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/kevin.galassi2)'
 published: true
 ---
 
@@ -67,4 +75,5 @@ published: true
 ## Past members
 
  - Dr. [Daniele De Gregorio](https://www.linkedin.com/in/daniele-de-gregorio/) (now CEO & Co-founder of [eyecan.ai](https://www.eyecan.ai/))
-
+ - Dr. [Federico Califano](https://personen.utwente.nl/f.califano) (now Assistant Professor at [University of Twente](https://people.utwente.nl/f.califano))
+ - Dr. [Umberto Scarcia](https://www.linkedin.com/in/umberto-scarcia-9281b646/?originalSubdomain=it) (now R&D automation and robotics specialist at [SACMI](https://www.sacmi.com/))  
