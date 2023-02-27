@@ -75,5 +75,5 @@ published: true
 ## Past members
 
  - Dr. [Daniele De Gregorio](https://www.linkedin.com/in/daniele-de-gregorio/) (now CEO & Co-founder of [eyecan.ai](https://www.eyecan.ai/))
- - Dr. [Federico Califano](https://personen.utwente.nl/f.califano) (now Assistant Professor at [University of Twente](https://people.utwente.nl/f.califano))
+ - Dr. [Federico Califano](https://personen.utwente.nl/f.califano) (now Assistant Professor at [University of Twente](https://www.utwente.nl/en/))
  - Dr. [Umberto Scarcia](https://www.linkedin.com/in/umberto-scarcia-9281b646/?originalSubdomain=it) (now R&D automation and robotics specialist at [SACMI](https://www.sacmi.com/))  
