@@ -1,8 +1,8 @@
 main:
-  - title: "Topics"
-    url: "#research"
+  - title: "Research"
+    url: /research/ 
   - title: "Projects"
-    url: "#projects"
+    url: /projects/ 
   - title: "People"
     url: /people/
   - title: "Publications"
