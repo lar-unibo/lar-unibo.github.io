@@ -2,7 +2,7 @@
 layout: splash
 title: Laboratory of Automation and Robotics
 header:
-  image: /files/images/logo/header2.jpg
+  image: /files/images/logo/header.jpg
  
 published: true
 ---
