@@ -283,3 +283,5 @@ defaults:
     values:
       layout: single
       author_profile: false
+
+github: [metadata] #encoding: UTF-8 kramdown: input: GFM hard_wrap: false 
