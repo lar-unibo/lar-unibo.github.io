@@ -12,11 +12,11 @@ people_staff:
   - image_path: /files/images/people/riccardo_zanella.jpg
     alt: Dr. Riccardo Zanella
     title: Dr. Riccardo Zanella
-    excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/riccardo.zanella2/en)' 
+    excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/r.zanella/en)' 
   - image_path: /files/images/people/roberto_meattini.jpg 
     alt: Dr. Roberto Meattini
     title: Dr. Roberto Meattini
-    excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/roberto.meattini2)'
+    excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/roberto.meattini2)' 
 people_phd:
   - image_path: /files/images/people/alessio_caporali.jpg
     alt: Alessio Caporali
@@ -26,6 +26,10 @@ people_phd:
     alt: Kevin Galassi
     title: Kevin Galassi
     excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/kevin.galassi2)'
+  - image_path: /files/images/people/alessandra_bernardini.jpg
+    alt: Alessandra Bernardini
+    title: Alessandra Bernardini
+    excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/alessandr.bernardin5/en)'
 published: true
 ---
 
@@ -76,7 +80,7 @@ published: true
 ## Staff
 {% include feature_row id="people_staff" class="people_feature_row" %}
 
-## PhD Student
+## PhD Students
 {% include feature_row id="people_phd" class="people_feature_row" %}
 
 ## Past members
