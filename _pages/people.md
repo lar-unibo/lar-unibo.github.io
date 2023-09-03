@@ -4,11 +4,16 @@ author_profile: false
 classes: wide
 title: People
 permalink: /people/
-people_staff:
+people_head:
   - image_path: /files/images/people/gianluca_palli.jpg
     alt: Prof. Gianluca Palli 
     title: Prof. Gianluca Palli 
     excerpt: 'Full Professor<br/>[Webpage](https://www.unibo.it/sitoweb/gianluca.palli/en)'
+  - image_path: /files/images/people/claudio_melchiorri.jpg
+    alt: Prof. Claudio Melchiorri 
+    title: Prof. Claudio Melchiorri 
+    excerpt: 'Full Professor<br/>[Webpage](https://www.unibo.it/sitoweb/claudio.melchiorri/en)'
+people_researchers: 
   - image_path: /files/images/people/riccardo_zanella.jpg
     alt: Dr. Riccardo Zanella
     title: Dr. Riccardo Zanella
@@ -17,6 +22,11 @@ people_staff:
     alt: Dr. Roberto Meattini
     title: Dr. Roberto Meattini
     excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/roberto.meattini2)' 
+people_assistents:
+  - image_path: /files/images/people/davide_chiaravalli.jpg
+    alt:  Dr. Davide Chiaravalli
+    title:  Dr. Davide Chiaravalli
+    excerpt: 'Research Assistant <br/>[Webpage](https://www.unibo.it/sitoweb/davide.chiaravalli2/en)'
 people_phd:
   - image_path: /files/images/people/alessio_caporali.jpg
     alt: Alessio Caporali
@@ -30,6 +40,19 @@ people_phd:
     alt: Alessandra Bernardini
     title: Alessandra Bernardini
     excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/alessandr.bernardin5/en)'
+  - image_path: /files/images/people/alex_pasquali.jpg
+    alt: Alex Pasquali
+    title: Alex Pasquali
+    excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/alex.pasquali2/en)'
+  - image_path: /files/images/people/andrea_govoni.jpg
+    alt: Andrea Govoni
+    title: Andrea Govoni
+    excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/andrea.govoni11/en)'
+people_collab:
+  - image_path: /files/images/people/luigi_biagiotti.jpg
+    alt: Prof. Luigi Biagiotti
+    title: Prof. Luigi Biagiotti
+    excerpt: 'Associate Professor at Department of Engineering “Enzo Ferrari” of University of Modena and Reggio Emilia <br/>[Webpage](http://www.dii.unimore.it/~lbiagiotti/)'
 published: true
 ---
 
@@ -77,11 +100,20 @@ published: true
 
 # People
 
-## Staff
-{% include feature_row id="people_staff" class="people_feature_row" %}
+## Head
+{% include feature_row id="people_head" class="people_feature_row" %}
+
+## Post-Docs and Senior Researchers
+{% include feature_row id="people_researchers" class="people_feature_row" %}
+
+## Research Assistents
+{% include feature_row id="people_assistents" class="people_feature_row" %}
 
 ## PhD Students
 {% include feature_row id="people_phd" class="people_feature_row" %}
+
+## External Collaborators
+{% include feature_row id="people_collab" class="people_feature_row" %}
 
 ## Past members
 
