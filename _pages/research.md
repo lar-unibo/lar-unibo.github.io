@@ -37,9 +37,9 @@ published: true
 
 # Current Research Topics
 {% include feature_row id="topic1" type="left" %}
+{% include feature_row id="topic4" type="left" %} 
 {% include feature_row id="topic2" type="left" %} 
 {% include feature_row id="topic3" type="left" %} 
-{% include feature_row id="topic4" type="left" %} 
 
 # Past Research Topics
 {% include feature_row id="topicold1" type="left" %}  
