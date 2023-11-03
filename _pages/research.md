@@ -23,12 +23,12 @@ topic3:
     excerpt: >-
       [in progress]
 topic4:
-  - image_path: /files/images/topics/vibration.jpg 
+  - image_path: /files/images/topics/robotwaiter.jpg 
     title: Vibration suppression in robot trajectories
     excerpt: >-
       [in progress]
 topicold1:
-  - image_path: /files/images/topics/hands.jpg 
+  - image_path: /files/images/topics/ubhands.png 
     title: Design and control of anthropomorphic robot hands
     excerpt: >-
       [in progress] 
