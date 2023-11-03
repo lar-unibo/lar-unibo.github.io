@@ -14,21 +14,21 @@ topic1:
       At LAR, we are actively researching approaches to effectively perceive DLOs using deep learning methods, while also developing smart strategies to enable the automatic generation of training datasets. For the robotic manipulation, our focus is on combining both model-based and learning-based approaches, with the aim of addressing some of their individual limitations.
 topic2:
   - image_path: /files/images/topics/emg.jpg 
-    title: Electromyographic interfaces for controlling robotic devices
+    title: Electromyographic interfaces for Controlling Robotic Devices
     excerpt: >-
       [in progress]
 topic3:
   - image_path: /files/images/topics/energyrobots.jpg 
-    title: Robot learning with physical energy awarness
+    title: Robot Learning with Physical Energy Awareness
     excerpt: >-
       [in progress]
 topic4:
   - image_path: /files/images/topics/robotwaiter.png 
-    title: Vibration suppression in robot trajectories
+    title: Robotic Manipulation of Liquids in Open Containers
     excerpt: >-
       [in progress]
 topicold1:
-  - image_path: /files/images/topics/ubhands.png 
+  - image_path: /files/images/topics/ubhand.png 
     title: Design and control of anthropomorphic robot hands
     excerpt: >-
       [in progress] 
