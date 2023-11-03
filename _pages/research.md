@@ -6,7 +6,7 @@ title: "Research Topics"
 permalink: /research/
 
 topic1:
-  - image_path: /files/images/topics/dlo.jpg 
+  - image_path: /files/images/topics/dlo.png 
     title: Robotic perception and manipulation of Deformable Linear Objects
     excerpt: >-
       Deformable Linear Objects (DLOs) are a specific subset of Deformable Objects (DOs), i.e. objects that can change their shape when subjected to external forces. DLOs are characterized by a linear geometry and include examples such as wires, cables, strings, and ropes. Despite being common in both domestic and industrial environments, DLOs pose a significant challenge for robotic applications. Indeed, the manufacturing and assembly industries that work with wires and wiring harnesses still rely heavily on human labor. The main challenges that robots face when dealing with these objects are: (1) the lack of any specific shape or feature that distinguishes them from other objects; (2) the vast number of possible configurations they can assume; and (3) their highly nonlinear and complex dynamics, which are generally difficult to model and predict.
@@ -23,7 +23,7 @@ topic3:
     excerpt: >-
       [in progress]
 topic4:
-  - image_path: /files/images/topics/robotwaiter.jpg 
+  - image_path: /files/images/topics/robotwaiter.png 
     title: Vibration suppression in robot trajectories
     excerpt: >-
       [in progress]
