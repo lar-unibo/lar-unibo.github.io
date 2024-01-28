@@ -44,10 +44,28 @@ people_phd:
     alt: Alex Pasquali
     title: Alex Pasquali
     excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/alex.pasquali2/en)'
-  - image_path: /files/images/people/andrea_govoni.jpg
+  - image_path: /files/images/people/empty_bio.jpg
     alt: Andrea Govoni
     title: Andrea Govoni
     excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/andrea.govoni11/en)'
+  - image_path: /files/images/people/empty_bio.jpg
+    alt: Mona Sabergharamaleki
+    title: Mona Sabergharamaleki
+    excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/mona.sabergharamaleki/en)'
+  - image_path: /files/images/people/empty_bio.jpg
+    alt: Mahrukh
+    title: Mahrukh
+    excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/mahrukh.mahrukh2/en)'
+people_fellow:
+  - image_path: /files/images/people/empty_bio.jpg
+    alt: Michela Cavuoto
+    title: Michela Cavuoto
+    excerpt: 'Research Fellow<br/>[Webpage](https://www.unibo.it/sitoweb/michela.cavuoto2/en)'
+  - image_path: /files/images/people/empty_bio.jpg
+    alt: Miriam Massini Alunni
+    title: Miriam Massini Alunni
+    excerpt: 'Research Fellow<br/>'    
+
 people_collab:
   - image_path: /files/images/people/luigi_biagiotti.jpg
     alt: Prof. Luigi Biagiotti
@@ -106,11 +124,14 @@ published: true
 ## Post-Docs and Senior Researchers
 {% include feature_row id="people_researchers" class="people_feature_row" %}
 
-## Research Assistents
+## Research Assistants
 {% include feature_row id="people_assistents" class="people_feature_row" %}
 
 ## PhD Students
 {% include feature_row id="people_phd" class="people_feature_row" %}
+
+## Research Fellows
+{% include feature_row id="people_fellow" class="people_feature_row" %}
 
 ## External Collaborators
 {% include feature_row id="people_collab" class="people_feature_row" %}
