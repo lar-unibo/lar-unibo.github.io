@@ -1,6 +1,9 @@
 main:
   - title: "Research"
     url: /research/ 
+    children:
+      - title: "Deformable Linear Objects"
+        url: /deformable_linear_objects/
   - title: "Projects"
     url: /projects/ 
   - title: "People"
