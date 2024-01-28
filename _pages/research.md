@@ -14,7 +14,7 @@ topic1:
       At LAR, we are actively researching approaches to effectively perceive DLOs using deep learning methods, while also developing smart strategies to enable the automatic generation of training datasets. For the robotic manipulation, our focus is on combining both model-based and learning-based approaches, with the aim of addressing some of their individual limitations.
     url: >- 
       /deformable_linear_objects/
-    btn_label: Read More
+    btn_label: Summary of Key Results
     btn_class: btn--primary 
 topic2:
   - image_path: /files/images/topics/emg.jpg 

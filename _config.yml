@@ -93,10 +93,10 @@ social:
 
 # Analytics
 analytics:
-  provider               : #"google-gtag" # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : #"UA-127395440-1"
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "G-0HGDL6KQQ1"
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
@@ -285,3 +285,5 @@ defaults:
       author_profile: false
 
 github: [metadata] #encoding: UTF-8 kramdown: input: GFM hard_wrap: false 
+
+
