@@ -14,10 +14,6 @@ people_head:
     title: Prof. Claudio Melchiorri 
     excerpt: 'Full Professor<br/>[Webpage](https://www.unibo.it/sitoweb/claudio.melchiorri/en)'
 people_researchers: 
-  - image_path: /files/images/people/riccardo_zanella.jpg
-    alt: Dr. Riccardo Zanella
-    title: Dr. Riccardo Zanella
-    excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/r.zanella/en)' 
   - image_path: /files/images/people/roberto_meattini.jpg 
     alt: Dr. Roberto Meattini
     title: Dr. Roberto Meattini
@@ -137,7 +133,8 @@ published: true
 {% include feature_row id="people_collab" class="people_feature_row" %}
 
 ## Past members
-
+ - Dr. [Riccardo Zanella](https://personen.utwente.nl/r.zanella) (now PostDoc at [University of Twente](https://www.utwente.nl/en/))
  - Dr. [Daniele De Gregorio](https://www.linkedin.com/in/daniele-de-gregorio/) (now CEO & Co-founder of [eyecan.ai](https://www.eyecan.ai/))
  - Dr. [Federico Califano](https://personen.utwente.nl/f.califano) (now Assistant Professor at [University of Twente](https://www.utwente.nl/en/))
  - Dr. [Umberto Scarcia](https://www.linkedin.com/in/umberto-scarcia-9281b646/?originalSubdomain=it) (now R&D automation and robotics specialist at [SACMI](https://www.sacmi.com/))  
+
