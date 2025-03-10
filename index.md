@@ -14,3 +14,8 @@ The **Laboratory of Automation and Robotics (LAR)** is a research laboratory bas
 LAR's mission is to advance the field of robotics through the development of advanced methodologies, including AI-based approaches and classic control theory, that empower industrial robot manipulators to operate skillfully in structured and unstructured environments.
 At LAR, we also focus on improving robot perception by developing cutting-edge algorithms that allow robots to perceive their surroundings accurately and make informed decisions in real-time. Our researchers are dedicated to finding innovative solutions to complex challenges, such as increasing robot autonomy, enhancing manipulation skills, and improving human-robot interaction.
 
+
+# Group Photo – Christmas 2024
+<figure style="width: 100%" class="align-center">
+  <img src="/files/images/general/group_photo_dec_2024.jpeg">
+</figure>

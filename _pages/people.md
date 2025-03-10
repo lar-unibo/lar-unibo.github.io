@@ -77,6 +77,14 @@ people_fellow:
     alt: Davide Bargellini
     title: Davide Bargellini
     excerpt: 'Research Fellow<br/>[Webpage](https://www.unibo.it/sitoweb/davide.bargellini2/en)'
+  - image_path: /files/images/people/empty_bio.jpg
+    alt: Ljubomir Miladinovic
+    title: Ljubomir Miladinovic
+    excerpt: 'Research Fellow<br/>[Webpage](https://www.unibo.it/sitoweb/ljubomir.miladinovic2/en)'
+  - image_path: /files/images/people/empty_bio.jpg
+    alt: Cristina Saccani
+    title: Cristina Saccani
+    excerpt: 'Research Fellow<br/>[Webpage](https://www.unibo.it/sitoweb/cristina.saccani/en)'
 
 people_vising:
   - image_path: /files/images/people/fei_wang.jpeg
