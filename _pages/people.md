@@ -17,17 +17,17 @@ people_researchers:
   - image_path: /files/images/people/roberto_meattini.jpg 
     alt: Dr. Roberto Meattini
     title: Dr. Roberto Meattini
-    excerpt: 'Postdoctoral Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/roberto.meattini2)' 
+    excerpt: 'Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/roberto.meattini2)' 
+  - image_path: /files/images/people/alessio_caporali.jpg
+    alt: Dr. Alessio Caporali
+    title: Dr. Alessio Caporali
+    excerpt: 'Researcher<br/>[Webpage](https://www.unibo.it/sitoweb/alessio.caporali2/en)'
 people_assistents:
   - image_path: /files/images/people/davide_chiaravalli.jpg
     alt:  Dr. Davide Chiaravalli
     title:  Dr. Davide Chiaravalli
     excerpt: 'Research Assistant <br/>[Webpage](https://www.unibo.it/sitoweb/davide.chiaravalli2/en)'
 people_phd:
-  - image_path: /files/images/people/alessio_caporali.jpg
-    alt: Alessio Caporali
-    title: Alessio Caporali
-    excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/alessio.caporali2/en)'
   - image_path: /files/images/people/kevin_galassi.jpg
     alt: Kevin Galassi
     title: Kevin Galassi
@@ -52,15 +52,37 @@ people_phd:
     alt: Mahrukh
     title: Mahrukh
     excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/mahrukh.mahrukh2/en)'
-people_fellow:
+  - image_path: /files/images/people/hongyu_lan.jpeg
+    alt: Hongyu Lan
+    title: Hongyu Lan
+    excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/hongyu.lan/en)'
+  - image_path: /files/images/people/nicole_alati.jpeg
+    alt: Nicole Alati
+    title: Nicole Alati
+    excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/nicole.alati/en)'
   - image_path: /files/images/people/empty_bio.jpg
+    alt: Mattia Tafuri
+    title: Mattia Tafuri
+    excerpt: 'PhD Student<br/>[Webpage](https://www.unibo.it/sitoweb/mattia.tafuri/en)'
+people_fellow:
+  - image_path: /files/images/people/michela_cavuoto.jpeg
     alt: Michela Cavuoto
     title: Michela Cavuoto
     excerpt: 'Research Fellow<br/>[Webpage](https://www.unibo.it/sitoweb/michela.cavuoto2/en)'
   - image_path: /files/images/people/empty_bio.jpg
-    alt: Miriam Massini Alunni
-    title: Miriam Massini Alunni
-    excerpt: 'Research Fellow<br/>'    
+    alt: Simone Soprani
+    title: Simone Soprani
+    excerpt: 'Research Fellow<br/>[Webpage](https://www.unibo.it/sitoweb/simone.soprani2/en)'
+  - image_path: /files/images/people/empty_bio.jpg
+    alt: Davide Bargellini
+    title: Davide Bargellini
+    excerpt: 'Research Fellow<br/>[Webpage](https://www.unibo.it/sitoweb/davide.bargellini2/en)'
+
+people_vising:
+  - image_path: /files/images/people/fei_wang.jpeg
+    alt: Fei Wang
+    title: Fei Wang
+    excerpt: 'Visiting PhD Student<br/>'
 
 people_collab:
   - image_path: /files/images/people/luigi_biagiotti.jpg
@@ -117,7 +139,7 @@ published: true
 ## Head
 {% include feature_row id="people_head" class="people_feature_row" %}
 
-## Post-Docs and Senior Researchers
+## Senior Researchers
 {% include feature_row id="people_researchers" class="people_feature_row" %}
 
 ## Research Assistants
@@ -128,6 +150,9 @@ published: true
 
 ## Research Fellows
 {% include feature_row id="people_fellow" class="people_feature_row" %}
+
+## Visiting
+{% include feature_row id="people_vising" class="people_feature_row" %}
 
 ## External Collaborators
 {% include feature_row id="people_collab" class="people_feature_row" %}
