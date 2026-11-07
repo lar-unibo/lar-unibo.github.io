@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laboratory of Automation and Robotics | LAR @ UNIBO</title>
+  <meta name="description" content="The Laboratory of Automation and Robotics (LAR) at the Università di Bologna develops AI-based and control-theoretic methods for robot perception and manipulation.">
+  <link rel="canonical" href="https://lar-unibo.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LAR @ UNIBO">
+  <meta property="og:title" content="Laboratory of Automation and Robotics">
+  <meta property="og:description" content="The Laboratory of Automation and Robotics (LAR) at the Università di Bologna develops AI-based and control-theoretic methods for robot perception and manipulation.">
+  <meta property="og:url" content="https://lar-unibo.github.io/">
+  <meta property="og:image" content="https://lar-unibo.github.io/files/images/logo/og_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#03192a">
+  <link rel="icon" type="image/png" href="/files/images/logo/favicon.png">
+  <link rel="apple-touch-icon" href="/files/images/logo/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css?v=2026-11-07-15">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="/assets/js/site.js?v=2026-11-07-11" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    "name": "Laboratory of Automation and Robotics (LAR)",
+    "url": "https://lar-unibo.github.io/",
+    "logo": "https://lar-unibo.github.io/files/images/logo/lar_logo.png",
+    "parentOrganization": {
+      "@type": "CollegeOrUniversity",
+      "name": "Alma Mater Studiorum – Università di Bologna",
+      "department": { "@type": "Organization", "name": "Department of Electrical, Electronic, and Information Engineering (DEI)" }
+    },
+    "address": { "@type": "PostalAddress", "addressLocality": "Bologna", "addressCountry": "IT" },
+    "sameAs": ["https://github.com/lar-unibo/"]
+  }
+  </script>
+  <!-- Google Analytics (only on the live site, not on localhost) -->
+  <script>
+    if (location.hostname === 'lar-unibo.github.io') {
+      var ga = document.createElement('script');
+      ga.async = true;
+      ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-0HGDL6KQQ1';
+      document.head.appendChild(ga);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-0HGDL6KQQ1', { anonymize_ip: false });
+    }
+  </script>
+</head>
+<body class="page-home">
+  <!-- Icon sprite: use with <svg class="icon" aria-hidden="true"><use href="#i-NAME"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
+    <symbol id="i-paper" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-pdf" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 11v6M9.5 14.5 12 17l2.5-2.5"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="m10 8.5 5.5 3.5-5.5 3.5z"/></symbol>
+    <symbol id="i-dataset" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8v-13M4.5 12c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5a14.5 14.5 0 0 1 0 19M12 2.5a14.5 14.5 0 0 0 0 19"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-gripper" viewBox="0 0 24 24"><path d="M12 2.5V8M6.5 8h11M7.5 8v5.5l-2.5 4M16.5 8v5.5l2.5 4M5 17.5l1.5 3M19 17.5l-1.5 3"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2.5"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9.5 2.5V6M14.5 2.5V6M9.5 18v3.5M14.5 18v3.5M2.5 9.5H6M2.5 14.5H6M18 9.5h3.5M18 14.5h3.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20.5a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M21.5 20.5a6.5 6.5 0 0 0-3.7-5.9"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2.5 12h4l3-8 5 16 3-8h4"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2.5 4.5 13.5H11l-1 8 8.5-11H12z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10.5M19 21V10.5M9.5 21v-5.5h5V21M2.5 10.5 12 4.5l9.5 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.1 7-11.5a7 7 0 0 0-14 0c0 5.4 7 11.5 7 11.5z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header (same on every page) -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Laboratory of Automation and Robotics – home">
+        <img class="brand-logo brand-logo--on-light" src="/files/images/logo/lar_logo.png" alt="" width="546" height="240">
+        <img class="brand-logo brand-logo--on-dark" src="/files/images/logo/lar_logo_light.png" alt="" width="546" height="240">
+        <span class="brand-text">
+          <svg class="brand-lockup" viewBox="0 0 88 42" width="88" height="42" aria-hidden="true" focusable="false">
+            <text x="0" y="10.5" textLength="88" lengthAdjust="spacing">Laboratory of</text>
+            <text x="0" y="25" textLength="88" lengthAdjust="spacing">Automation</text>
+            <text x="0" y="39.5" textLength="88" lengthAdjust="spacing">and Robotics</text>
+          </svg>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/research/">Research</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/people/">People</a></li>
+          <li><a href="/publications/">Publications</a></li>
+        </ul>
+        <a class="nav-github" href="https://github.com/lar-unibo/" target="_blank" rel="noopener" aria-label="LAR on GitHub">
+          <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <!-- Two robot arms holding a cable: drawn and simulated by site.js; drag the grippers. -->
+      <canvas class="robot-scene" data-scene="robots" aria-hidden="true"></canvas>
+      <canvas class="robot-scene" data-scene="hands" aria-hidden="true" hidden></canvas>
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow--light eyebrow--live">DEI · Università di Bologna</p>
+          <h1 class="hero-title">Robots that perceive, learn and manipulate.</h1>
+          <p class="hero-lead">LAR advances robotics through AI-based approaches and classic control theory, empowering industrial robot manipulators to operate skillfully in structured and unstructured environments.</p>
+          <div class="hero-actions">
+            <a class="btn btn--accent" href="/research/">Explore our research <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            <a class="btn btn--ghost" href="/publications/">Publications</a>
+          </div>
+        </div>
+        <!-- The robot scene is drawn in this area; without JavaScript the photo is shown instead. -->
+        <div class="hero-stage" data-stage>
+          <img class="hero-stage-fallback" src="/files/images/general/hero_dlo.jpg" alt="Two robot arms with grippers above a wiring harness on a table" width="658" height="771">
+          <!-- Featured research: one interactive demo per main research direction. -->
+          <div class="stage-head">
+            <p class="stage-kicker">Featured research</p>
+            <div class="stage-tabs" role="tablist" aria-label="Featured research demos">
+              <button type="button" role="tab" aria-selected="true" data-demo-tab="robots">Deformable objects</button>
+              <button type="button" role="tab" aria-selected="false" tabindex="-1" data-demo-tab="hands">Robotic hands &amp; sEMG</button>
+            </div>
+            <a class="stage-link" href="/deformable_linear_objects/" data-demo-link>Deformable linear objects <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+          <p class="hero-hint" data-hint="robots" aria-hidden="true">Drag the grippers</p>
+          <p class="hero-hint" data-hint="hands" aria-hidden="true" hidden>Press and hold to grasp</p>
+          <button class="stage-toggle" type="button" data-autonomy aria-pressed="true" hidden>Shared autonomy <span>on</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <p class="eyebrow">About the lab</p>
+          <h2 class="section-title">From deformable objects to human–robot collaboration</h2>
+          <div class="prose">
+            <p>The <strong>Laboratory of Automation and Robotics (LAR)</strong> is a research laboratory based in Bologna, Italy, part of the <a href="https://dei.unibo.it/en/index.html">Department of Electrical, Electronic, and Information Engineering “Guglielmo Marconi” (DEI)</a> at the <a href="https://www.unibo.it/en/homepage">Alma Mater Studiorum – Università di Bologna</a>.</p>
+            <p>Our research follows two main directions. The first is the perception and manipulation of deformable objects, such as cables, wires and wiring harnesses, which robots still struggle to see and handle in industry. The second is shared autonomy and human–robot collaboration: sEMG interfaces, robotic hands and assistive devices that let people and robots work together naturally. Across both, we combine AI-based approaches with classic control theory, so that robot manipulators can operate skillfully in structured and unstructured environments.</p>
+          </div>
+          <div class="affil">
+            <a href="https://dei.unibo.it/en/index.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg>Department of Electrical, Electronic, and Information Engineering (DEI)</a>
+            <a href="https://www.unibo.it/en/homepage" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg>Alma Mater Studiorum – Università di Bologna</a>
+          </div>
+        </div>
+        <ul class="focus-grid">
+          <li class="focus-card reveal">
+            <span class="focus-icon"><svg class="icon" aria-hidden="true"><use href="#i-gripper"/></svg></span>
+            <h3>Deformable objects</h3>
+            <p>Perceiving and manipulating cables, wires and wiring harnesses with learning- and model-based methods.</p>
+          </li>
+          <li class="focus-card reveal">
+            <span class="focus-icon"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span>
+            <h3>Shared autonomy</h3>
+            <p>Robots that share control with their users and assist them in collaborative tasks.</p>
+          </li>
+          <li class="focus-card reveal">
+            <span class="focus-icon"><svg class="icon" aria-hidden="true"><use href="#i-activity"/></svg></span>
+            <h3>sEMG &amp; robotic hands</h3>
+            <p>Muscle-signal interfaces to control anthropomorphic robot hands and assistive devices.</p>
+          </li>
+          <li class="focus-card reveal">
+            <span class="focus-icon"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></span>
+            <h3>AI &amp; control</h3>
+            <p>AI-based approaches combined with classic control theory.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Research</p>
+            <h2 class="section-title">What we work on</h2>
+          </div>
+          <a class="link-arrow" href="/research/">All research topics <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        </div>
+        <!-- Two main research directions, then the other topics. -->
+        <div class="topic-bento">
+          <a class="topic-card topic-card--feature reveal" href="/deformable_linear_objects/">
+            <div class="topic-media">
+              <img src="/files/images/topics/survey_image.jpg" width="1200" height="709" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="topic-body">
+              <span class="topic-index">01 · Main direction</span>
+              <h3>Deformable objects: perception and manipulation</h3>
+              <p>Robots that see and handle cables, wires and wiring harnesses: deep-learning perception, automatic dataset generation, 3D shape estimation, and model- and learning-based manipulation.</p>
+              <span class="topic-go">Summary of Key Results <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+          <a class="topic-card topic-card--feature reveal" href="/human_robot_collaboration/">
+            <div class="topic-media is-contain">
+              <img src="/files/images/topics/ubhand.png" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="topic-body">
+              <span class="topic-index">02 · Main direction</span>
+              <h3>Shared autonomy, human–robot collaboration and robotic hands</h3>
+              <p>Robots that work with people: sEMG interfaces for robotic hands and assistive devices, shared-autonomy grip regulation, and intuitive kinesthetic teaching.</p>
+              <span class="topic-go">Summary of Key Results <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+        </div>
+
+        <h3 class="topic-row-label reveal">Also in the lab</h3>
+        <div class="topic-row">
+          <a class="topic-card topic-card--small reveal" href="/research/#liquids">
+            <div class="topic-media is-contain">
+              <img src="/files/images/topics/robotwaiter.png" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="topic-body">
+              <span class="topic-index">03</span>
+              <h3>Liquids in Open Containers</h3>
+              <p>Moving liquid-filled containers fast without spilling: sloshing models, anti-sloshing trajectories and predictive control for transport on a robotic tray.</p>
+              <span class="topic-go">Learn more <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+          <a class="topic-card topic-card--small reveal" href="/research/#collision-avoidance">
+            <div class="topic-media is-contain">
+              <img src="/files/images/topics/collision_avoidance_sdf.jpg" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="topic-body">
+              <span class="topic-index">04</span>
+              <h3>Collision Avoidance with Distance Fields</h3>
+              <p>Real-time avoidance of obstacles and self-collisions, with GPU-evaluated signed distance fields inside task-priority control.</p>
+              <span class="topic-go">Learn more <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+          <a class="topic-card topic-card--small reveal" href="/research/#mechatronic-design">
+            <div class="topic-media is-contain">
+              <img src="/files/images/topics/compliant_wrist_card.jpg" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="topic-body">
+              <span class="topic-index">05</span>
+              <h3>Mechatronic Design</h3>
+              <p>Compliant prosthetic wrists, tendon-driven grippers, twisted-string actuators and tactile sensors, from virtual prototype to physical device.</p>
+              <span class="topic-go">Learn more <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2 class="section-title">Past research projects</h2>
+          </div>
+          <a class="link-arrow" href="/projects/">All projects <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        </div>
+        <div class="project-tiles">
+          <a class="project-tile reveal" href="https://simod.eu/" target="_blank" rel="noopener">
+            <span class="project-tile-logo"><img src="/files/images/projects/simod_logo.svg" alt="SiMOD logo" loading="lazy" decoding="async"></span>
+            <span class="project-tile-body">
+              <strong>SiMOD</strong>
+              <span>Mobile multi-robot systems for the manipulation of deformable objects</span>
+            </span>
+            <span class="project-tile-go" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></span>
+          </a>
+          <a class="project-tile reveal" href="https://intelliman-project.eu/methodology" target="_blank" rel="noopener">
+            <span class="project-tile-logo"><img src="/files/images/projects/intelliman_logo.jpg" alt="IntelliMan logo" loading="lazy" decoding="async"></span>
+            <span class="project-tile-body">
+              <strong>IntelliMan</strong>
+              <span>AI-Powered Manipulation System for Advanced Robotic Service, Manufacturing and Prosthetics</span>
+            </span>
+            <span class="project-tile-go" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></span>
+          </a>
+          <a class="project-tile reveal" href="https://remodel-project.eu/" target="_blank" rel="noopener">
+            <span class="project-tile-logo"><img src="/files/images/projects/remodel_logo.jpg" alt="REMODEL logo" loading="lazy" decoding="async"></span>
+            <span class="project-tile-body">
+              <strong>REMODEL</strong>
+              <span>Robotic technologies for the manipulation of complex deformable linear objects</span>
+            </span>
+            <span class="project-tile-go" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section section--team">
+      <div class="container">
+        <figure class="team-photo reveal">
+          <img src="/files/images/general/group_photo_dec_2024.jpeg" alt="Group photo of the LAR team outside the lab" loading="lazy" decoding="async" width="1600" height="1200">
+          <figcaption>
+            <div>
+              <p class="eyebrow eyebrow--light">The team</p>
+              <h2>Meet the people behind LAR</h2>
+              <p class="team-caption">Group Photo – Christmas 2024</p>
+            </div>
+            <div class="team-actions">
+              <a class="btn btn--accent" href="/people/">Meet the team <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+              <a class="btn btn--ghost" href="/people/#photos">More photos</a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same on every page) -->
+  <footer class="site-footer">
+    <div class="footer-skyline" aria-hidden="true"></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="/" aria-label="Laboratory of Automation and Robotics – home">
+          <img class="brand-logo" src="/files/images/logo/lar_logo_light.png" alt="" width="546" height="240">
+          <span class="brand-text">
+            <svg class="brand-lockup" viewBox="0 0 88 42" width="88" height="42" aria-hidden="true" focusable="false">
+              <text x="0" y="10.5" textLength="88" lengthAdjust="spacing">Laboratory of</text>
+              <text x="0" y="25" textLength="88" lengthAdjust="spacing">Automation</text>
+              <text x="0" y="39.5" textLength="88" lengthAdjust="spacing">and Robotics</text>
+            </svg>
+          </span>
+        </a>
+        <p>Part of the Department of Electrical, Electronic, and Information Engineering “Guglielmo Marconi” (DEI) at the Alma Mater Studiorum – Università di Bologna.</p>
+        <p class="footer-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Bologna, Italy</p>
+      </div>
+
+      <div class="footer-col">
+        <h2>Explore</h2>
+        <ul>
+            <li><a href="/research/">Research</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/people/">People</a></li>
+            <li><a href="/publications/">Publications</a></li>
+            <li><a href="/deformable_linear_objects/">Deformable Linear Objects</a></li>
+            <li><a href="/human_robot_collaboration/">Human–Robot Collaboration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Affiliations</h2>
+        <ul>
+          <li><a href="https://dei.unibo.it/en/index.html" target="_blank" rel="noopener">Department of Electrical, Electronic, and Information Engineering (DEI)</a></li>
+          <li><a href="https://www.unibo.it/en/homepage" target="_blank" rel="noopener">Alma Mater Studiorum – Università di Bologna</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Code &amp; data</h2>
+        <ul>
+          <li><a class="footer-icon-link" href="https://github.com/lar-unibo/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> github.com/lar-unibo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span data-current-year>2026</span> Laboratory of Automation and Robotics · Università di Bologna</span>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

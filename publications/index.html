@@ -1,0 +1,1275 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications | LAR @ UNIBO</title>
+  <meta name="description" content="Journal articles, conference papers and preprints from the lab. Search by title, author or venue, or filter by type and year.">
+  <link rel="canonical" href="https://lar-unibo.github.io/publications/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LAR @ UNIBO">
+  <meta property="og:title" content="Publications">
+  <meta property="og:description" content="Journal articles, conference papers and preprints from the lab. Search by title, author or venue, or filter by type and year.">
+  <meta property="og:url" content="https://lar-unibo.github.io/publications/">
+  <meta property="og:image" content="https://lar-unibo.github.io/files/images/logo/og_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#03192a">
+  <link rel="icon" type="image/png" href="/files/images/logo/favicon.png">
+  <link rel="apple-touch-icon" href="/files/images/logo/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css?v=2026-11-07-15">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="/assets/js/site.js?v=2026-11-07-11" defer></script>
+
+  <!-- Google Analytics (only on the live site, not on localhost) -->
+  <script>
+    if (location.hostname === 'lar-unibo.github.io') {
+      var ga = document.createElement('script');
+      ga.async = true;
+      ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-0HGDL6KQQ1';
+      document.head.appendChild(ga);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-0HGDL6KQQ1', { anonymize_ip: false });
+    }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite: use with <svg class="icon" aria-hidden="true"><use href="#i-NAME"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
+    <symbol id="i-paper" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-pdf" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 11v6M9.5 14.5 12 17l2.5-2.5"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="m10 8.5 5.5 3.5-5.5 3.5z"/></symbol>
+    <symbol id="i-dataset" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8v-13M4.5 12c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5a14.5 14.5 0 0 1 0 19M12 2.5a14.5 14.5 0 0 0 0 19"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-gripper" viewBox="0 0 24 24"><path d="M12 2.5V8M6.5 8h11M7.5 8v5.5l-2.5 4M16.5 8v5.5l2.5 4M5 17.5l1.5 3M19 17.5l-1.5 3"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2.5"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9.5 2.5V6M14.5 2.5V6M9.5 18v3.5M14.5 18v3.5M2.5 9.5H6M2.5 14.5H6M18 9.5h3.5M18 14.5h3.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20.5a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M21.5 20.5a6.5 6.5 0 0 0-3.7-5.9"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2.5 12h4l3-8 5 16 3-8h4"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2.5 4.5 13.5H11l-1 8 8.5-11H12z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10.5M19 21V10.5M9.5 21v-5.5h5V21M2.5 10.5 12 4.5l9.5 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.1 7-11.5a7 7 0 0 0-14 0c0 5.4 7 11.5 7 11.5z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header (same on every page) -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Laboratory of Automation and Robotics – home">
+        <img class="brand-logo brand-logo--on-light" src="/files/images/logo/lar_logo.png" alt="" width="546" height="240">
+        <img class="brand-logo brand-logo--on-dark" src="/files/images/logo/lar_logo_light.png" alt="" width="546" height="240">
+        <span class="brand-text">
+          <svg class="brand-lockup" viewBox="0 0 88 42" width="88" height="42" aria-hidden="true" focusable="false">
+            <text x="0" y="10.5" textLength="88" lengthAdjust="spacing">Laboratory of</text>
+            <text x="0" y="25" textLength="88" lengthAdjust="spacing">Automation</text>
+            <text x="0" y="39.5" textLength="88" lengthAdjust="spacing">and Robotics</text>
+          </svg>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/research/">Research</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/people/">People</a></li>
+          <li><a href="/publications/" class="is-active" aria-current="page">Publications</a></li>
+        </ul>
+        <a class="nav-github" href="https://github.com/lar-unibo/" target="_blank" rel="noopener" aria-label="LAR on GitHub">
+          <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <canvas class="cables" data-cables="5" data-calm aria-hidden="true"></canvas>
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container page-hero-inner">
+        <p class="eyebrow eyebrow--light">Publications</p>
+        <h1>Publications</h1>
+        <p class="page-lead">Journal articles, conference papers and preprints from the lab. Search by title, author or venue, or filter by type and year.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <!-- Search and filters: shown by the page script. -->
+        <div class="pub-toolbar" data-pub-toolbar hidden>
+          <label class="pub-search">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+            <span class="sr-only">Search publications</span>
+            <input type="search" placeholder="Search title, author, venue…" autocomplete="off" data-pub-search>
+          </label>
+          <div class="seg" role="group" aria-label="Publication type" data-pub-type>
+            <button type="button" data-value="" aria-pressed="true">All</button>
+            <button type="button" data-value="journal" aria-pressed="false">Journals</button>
+            <button type="button" data-value="conference" aria-pressed="false">Conferences</button>
+            <button type="button" data-value="preprint" aria-pressed="false">Preprints</button>
+          </div>
+          <div class="year-chips" role="group" aria-label="Year" data-pub-years></div>
+        </div>
+
+        <p class="pub-count" data-pub-count aria-live="polite"></p>
+
+        <div class="pub-list" data-pub-list>
+<!-- PUBLICATIONS:START (generated by tools/update_publications.py — edits inside entries are kept) -->
+          <section class="pub-year" data-year="preprints">
+            <h2 class="pub-year-label">Preprints<small>4 papers</small></h2>
+            <ol class="pubs">
+              <li class="pub" data-type="preprint" data-year="2026" data-key="a-tutorial-on-shape-servoing-of-deformable-objects-part-ii-advanced-concepts">
+                <div class="pub-meta"><span class="pub-type pub-type--preprint">Preprint</span></div>
+                <h3 class="pub-title"><a href="https://arxiv.org/abs/2611.03825" target="_blank" rel="noopener">A Tutorial on Shape Servoing of Deformable Objects-Part II: Advanced Concepts</a></h3>
+                <p class="pub-authors">Ignacio Cuiral-Zueco, <span class="me">Alessio Caporali</span>, Miguel Aranda, <span class="me">Gianluca Palli</span>, Gonzalo López-Nicolás, Youcef Mezouar</p>
+                <p class="pub-venue">arXiv preprint arXiv:2611.03825</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://arxiv.org/abs/2611.03825" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>arXiv</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="preprint" data-year="2026" data-key="a-tutorial-on-shape-servoing-of-deformable-objects-part-i-fundamentals">
+                <div class="pub-meta"><span class="pub-type pub-type--preprint">Preprint</span></div>
+                <h3 class="pub-title"><a href="https://arxiv.org/abs/2610.40559" target="_blank" rel="noopener">A Tutorial on Shape Servoing of Deformable Objects-Part I: Fundamentals</a></h3>
+                <p class="pub-authors">Ignacio Cuiral-Zueco, <span class="me">Alessio Caporali</span>, Miguel Aranda, <span class="me">Gianluca Palli</span>, Gonzalo López-Nicolás, Youcef Mezouar</p>
+                <p class="pub-venue">arXiv preprint arXiv:2610.40559</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://arxiv.org/abs/2610.40559" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>arXiv</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="preprint" data-year="2024" data-key="real-time-collision-avoidance-with-gpu-computed-distance-maps">
+                <div class="pub-meta"><span class="pub-type pub-type--preprint">Preprint</span></div>
+                <h3 class="pub-title"><a href="https://arxiv.org/abs/2407.02363" target="_blank" rel="noopener">Real Time Collision Avoidance with GPU-Computed Distance Maps</a></h3>
+                <p class="pub-authors">Wendwosen Bellete Bedada, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">arXiv preprint arXiv:2407.02363</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://arxiv.org/abs/2407.02363" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>arXiv</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="preprint" data-year="2024" data-key="high-accuracy-estimation-of-vehicle-sideslip-angle-and-lateral-tire-forces-through-nonline">
+                <div class="pub-meta"><span class="pub-type pub-type--preprint">Preprint</span></div>
+                <h3 class="pub-title"><a href="https://ssrn.com/abstract=4869189" target="_blank" rel="noopener">High-accuracy estimation of vehicle sideslip angle and lateral tire forces through nonlinear sliding mode observer</a></h3>
+                <p class="pub-authors">H. Razmjooei, <span class="me">G. Palli</span>, S. Strano, C. Tordela, M. Terzo</p>
+                <p class="pub-venue">Available at SSRN 4869189</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://ssrn.com/abstract=4869189" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>SSRN</span></a>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="pub-year" data-year="2026">
+            <h2 class="pub-year-label">2026<small>17 papers</small></h2>
+            <ol class="pubs">
+              <li class="pub" data-type="journal" data-year="2026" data-key="sloshing-height-detection-using-rgb-action-cameras">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/rap.2026.3750081" target="_blank" rel="noopener">Sloshing-Height Detection Using RGB Action Cameras</a></h3>
+                <p class="pub-authors">Roberto Di Leva, <span class="me">Simone Soprani</span>, <span class="me">Luigi Biagiotti</span>, <span class="me">Gianluca Palli</span>, Marco Carricato</p>
+                <p class="pub-venue">IEEE Robotics and Automation Practice, pp. 1–6</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/rap.2026.3750081" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2026" data-key="rototiller-rolling-optimization-of-tasks-and-online-trajectories-for-integrated-multi-robo">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.3390/robotics15100189" target="_blank" rel="noopener">ROTOTILLER: Rolling Optimization of Tasks and Online Trajectories for Integrated Multi-Robot Task Allocation and Fleet Navigation</a></h3>
+                <p class="pub-authors">Filippo Guarda, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">Robotics, vol. 15, no. 10, p. 189</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.3390/robotics15100189" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2026" data-key="fast-gpu-evaluation-of-differentiable-signed-distance-fields-for-robotics-via-tensor-decom">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.robot.2026.105717" target="_blank" rel="noopener">Fast GPU evaluation of differentiable Signed Distance Fields for robotics via tensor decompositions</a></h3>
+                <p class="pub-authors"><span class="me">Andrea Govoni</span>, Sylvain Calinon, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">Robotics and Autonomous Systems, vol. 206, p. 105717</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.robot.2026.105717" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2026" data-key="mechatronic-development-of-a-climbing-robot-for-continuous-waam-3-d-printing">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tmech.2026.3695994" target="_blank" rel="noopener">Mechatronic Development of a Climbing Robot for Continuous WAAM 3-D Printing</a></h3>
+                <p class="pub-authors"><span class="me">Andrea Govoni</span>, Lidiana Arrè, Robin Joseph, Davide Samorì, Alessandro Ascari, Michele Palermo, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE/ASME Transactions on Mechatronics, pp. 1–12</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tmech.2026.3695994" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2026" data-key="experimental-verification-of-nonlinear-sliding-mode-observer-for-accurate-estimation-of-ve">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1177/09544070251359702" target="_blank" rel="noopener">Experimental verification of nonlinear sliding mode observer for accurate estimation of vehicle sideslip angle and lateral tire forces</a></h3>
+                <p class="pub-authors">Hamid Razmjooei, <span class="me">Gianluca Palli</span>, Salvatore Strano, Ciro Tordela, Mario Terzo, Mohammad Hossein Shafiei</p>
+                <p class="pub-venue">Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering, vol. 240, no. 7, pp. 4181–4196</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1177/09544070251359702" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2026" data-key="development-of-sliding-mode-observers-for-estimating-sideslip-angle-and-lateral-forces-in-">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1177/01423312251326643" target="_blank" rel="noopener">Development of sliding mode observers for estimating sideslip angle and lateral forces in road vehicles</a></h3>
+                <p class="pub-authors">Hamid Razmjooei, <span class="me">Gianluca Palli</span>, Salvatore Strano, Ciro Tordela</p>
+                <p class="pub-venue">Transactions of the Institute of Measurement and Control, vol. 48, no. 9, pp. 2032–2044</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1177/01423312251326643" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2026" data-key="hidden-markov-model-based-shared-autonomy-for-grip-strength-regulation-in-semg-driven-robo">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tro.2026.3696049" target="_blank" rel="noopener">Hidden Markov Model-Based Shared Autonomy for Grip Strength Regulation in sEMG Driven Robot Hand Control</a></h3>
+                <p class="pub-authors"><span class="me">Alessandra Bernardini</span>, <span class="me">Roberto Meattini</span>, <span class="me">Alex Pasquali</span>, Gianluca Laudante, Cosimo Gentile, Emanuele Gruppioni, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IEEE Transactions on Robotics, vol. 42, pp. 2249–2268</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tro.2026.3696049" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2026" data-key="sloshing-height-estimation-for-liquid-filled-containers-under-four-dimensional-motions-inc">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1007/s11071-026-12443-6" target="_blank" rel="noopener">Sloshing-height estimation for liquid-filled containers under four-dimensional motions including spatial translation and rotation about a fixed direction: modelling and experimental validation</a></h3>
+                <p class="pub-authors">Roberto Di Leva, <span class="me">Simone Soprani</span>, <span class="me">Gianluca Palli</span>, <span class="me">Luigi Biagiotti</span>, Marco Carricato</p>
+                <p class="pub-venue">Nonlinear Dynamics, vol. 114, no. 8</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1007/s11071-026-12443-6" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2026" data-key="robotic-perception-and-manipulation-of-deformable-linear-objects-a-survey">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1177/02783649261432253" target="_blank" rel="noopener">Robotic perception and manipulation of deformable linear objects: A survey</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, Ignacio Cuiral-Zueco, Gonzalo López-Nicolás, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">The International Journal of Robotics Research</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1177/02783649261432253" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2026" data-key="real-time-collision-avoidance-with-robot-distance-fields-in-a-task-priority-framework">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.robot.2026.105394" target="_blank" rel="noopener">Real-time collision avoidance with robot distance fields in a task-priority framework</a></h3>
+                <p class="pub-authors"><span class="me">Andrea Govoni</span>, <span class="me">Michela Cavuoto</span>, Yiming Li, Sylvain Calinon, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">Robotics and Autonomous Systems, vol. 200, p. 105394</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.robot.2026.105394" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2026" data-key="vision-and-tactile-sensing-for-dlo-manipulation-and-pin-insertion-in-robotic-connector-ass">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tmech.2026.3654272" target="_blank" rel="noopener">Vision and Tactile Sensing for DLO Manipulation and Pin Insertion in Robotic Connector Assembly</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, Michele Mirto, Salvatore Pirozzi, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE/ASME Transactions on Mechatronics, vol. 31, no. 5, pp. 5186–5197</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tmech.2026.3654272" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2026" data-key="model-predictive-control-for-non-prehensile-robotic-manipulation-of-liquid-containers-with">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim65483.2026.11658331" target="_blank" rel="noopener">Model Predictive Control for Non-Prehensile Robotic Manipulation of Liquid Containers with Sloshing Boundedness Guarantees</a></h3>
+                <p class="pub-authors">Giorgio Medico, Roberto Di Leva, <span class="me">Gianluca Palli</span>, Marco Carricato, <span class="me">Luigi Biagiotti</span></p>
+                <p class="pub-venue">2026 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 1–8</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim65483.2026.11658331" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2026" data-key="closed-form-tilting-compensation-for-slosh-free-robotic-trajectories-with-prescribed-yaw">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim65483.2026.11658355" target="_blank" rel="noopener">Closed-Form Tilting Compensation for Slosh-Free Robotic Trajectories with Prescribed Yaw</a></h3>
+                <p class="pub-authors"><span class="me">Simone Soprani</span>, Roberto Di Leva, <span class="me">Gianluca Palli</span>, Marco Carricato, <span class="me">Luigi Biagiotti</span></p>
+                <p class="pub-venue">2026 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 1–8</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim65483.2026.11658355" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2026" data-key="a-dual-arm-robotic-system-for-autonomous-connector-assembly-via-vision-tactile-sensing-and">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim65483.2026.11658157" target="_blank" rel="noopener">A Dual-Arm Robotic System for Autonomous Connector Assembly via Vision-Tactile Sensing and Contact-Based Pose Refinement</a></h3>
+                <p class="pub-authors">Michele Mirto, <span class="me">Alessio Caporali</span>, Žiga Gosar, Salvatore Pirozzi, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2026 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 1–6</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim65483.2026.11658157" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2026" data-key="enhancing-sim2real-transfer-for-torque-controlled-robots-through-real2sim-dynamics-estimat">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim65483.2026.11658256" target="_blank" rel="noopener">Enhancing Sim2Real Transfer for Torque-Controlled Robots through Real2Sim Dynamics Estimation and Reinforcement Learning</a></h3>
+                <p class="pub-authors"><span class="me">Davide Bargellini</span>, <span class="me">Alex Pasquali</span>, <span class="me">Andrea Govoni</span>, <span class="me">Riccardo Zanella</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2026 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 1–6</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim65483.2026.11658256" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2026" data-key="hertz-inspired-cylinder-plane-model-for-force-voltage-mapping-in-tactile-sensing">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim65483.2026.11658011" target="_blank" rel="noopener">Hertz-Inspired Cylinder–Plane Model for Force–Voltage Mapping in Tactile Sensing</a></h3>
+                <p class="pub-authors"><span class="me">Andrea Govoni</span>, <span class="me">Michela Cavuoto</span>, Loris Roveda, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2026 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 1–6</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim65483.2026.11658011" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2026" data-key="online-real2sim-calibration-of-velocity-controlled-digital-twins-via-reinforcement-learnin">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim65483.2026.11658146" target="_blank" rel="noopener">Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning</a></h3>
+                <p class="pub-authors">Simone Utili, <span class="me">Andrea Govoni</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2026 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 1–6</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim65483.2026.11658146" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="pub-year" data-year="2025">
+            <h2 class="pub-year-label">2025<small>14 papers</small></h2>
+            <ol class="pubs">
+              <li class="pub" data-type="journal" data-year="2025" data-key="time-optimal-anti-sloshing-trajectory-planning-for-multiple-liquid-filled-containers-subje">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2025.3643281" target="_blank" rel="noopener">Time-Optimal Anti-Sloshing Trajectory Planning for Multiple Liquid-Filled Containers Subject to SCARA Motion</a></h3>
+                <p class="pub-authors">Andrea Ferrari, Roberto Di Leva, <span class="me">Simone Soprani</span>, <span class="me">Luigi Biagiotti</span>, <span class="me">Gianluca Palli</span>, Marco Carricato</p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 11, no. 2, pp. 1762–1769</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2025.3643281" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2025" data-key="comparative-study-on-the-suitability-of-free-boundary-parameterization-techniques-for-3d-g">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.3390/robotics14110160" target="_blank" rel="noopener">Comparative Study on the Suitability of Free-Boundary Parameterization Techniques for 3D Geometry-Aware Path Generation</a></h3>
+                <p class="pub-authors">Mahrukh Mahrukh, <span class="me">Gianluca Palli</span>, Mattia Gambazza, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">Robotics, vol. 14, no. 11, p. 160</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.3390/robotics14110160" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2025" data-key="a-robotic-system-for-medical-hoses-manipulation-and-quality-check">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tase.2025.3620597" target="_blank" rel="noopener">A Robotic System for Medical Hoses Manipulation and Quality Check</a></h3>
+                <p class="pub-authors"><span class="me">Andrea Govoni</span>, Gianluca Laudante, Michele Mirto, Olga Pennacchio, <span class="me">Gianluca Palli</span>, Salvatore Pirozzi, Nicola Spatarella</p>
+                <p class="pub-venue">IEEE Transactions on Automation Science and Engineering, vol. 22, pp. 22699–22714</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tase.2025.3620597" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2025" data-key="programming-robot-interaction-behavior-during-kinesthetic-teaching-exploiting-semg-based-i">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tmech.2025.3603402" target="_blank" rel="noopener">Programming Robot Interaction Behavior During Kinesthetic Teaching Exploiting sEMG-Based Interfacing and Vibrotactile Feedback</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, <span class="me">Andrea Govoni</span>, <span class="me">Kevin Galassi</span>, <span class="me">Davide Chiaravalli</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IEEE/ASME Transactions on Mechatronics, vol. 30, no. 5, pp. 4011–4022</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tmech.2025.3603402" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2025" data-key="virtual-and-physical-prototyping-of-a-cable-driven-compliant-robotic-wrist">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tmech.2025.3593293" target="_blank" rel="noopener">Virtual and Physical Prototyping of a Cable-Driven Compliant Robotic Wrist</a></h3>
+                <p class="pub-authors">Mario Baggetta, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span>, Giovanni Berselli</p>
+                <p class="pub-venue">IEEE/ASME Transactions on Mechatronics, vol. 30, no. 5, pp. 4000–4010</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tmech.2025.3593293" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2025" data-key="robotic-manipulation-of-deformable-linear-objects-via-multiview-model-based-visual-trackin">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tmech.2025.3562295" target="_blank" rel="noopener">Robotic Manipulation of Deformable Linear Objects via Multiview Model-Based Visual Tracking</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE/ASME Transactions on Mechatronics, vol. 30, no. 5, pp. 3966–3977</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tmech.2025.3562295" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2025" data-key="gnn-topology-representation-learning-for-deformable-multi-linear-objects-dual-arm-robotic-">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tase.2025.3562231" target="_blank" rel="noopener">GNN Topology Representation Learning for Deformable Multi-Linear Objects Dual-Arm Robotic Manipulation</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Kevin Galassi</span>, <span class="me">Riccardo Zanella</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE Transactions on Automation Science and Engineering, vol. 22, pp. 14738–14751</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tase.2025.3562231" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2025" data-key="mechatronic-integration-of-a-dual-arm-robotic-system-for-wiring-harness-manufacturing">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tmech.2025.3536627" target="_blank" rel="noopener">Mechatronic Integration of a Dual-Arm Robotic System for Wiring Harness Manufacturing</a></h3>
+                <p class="pub-authors">Gianluca Laudante, Michele Mirto, Olga Pennacchio, <span class="me">Kevin Galassi</span>, <span class="me">Andrea Govoni</span>, <span class="me">Alex Pasquali</span>, Salvatore Pirozzi, Žiga Gosar, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE/ASME Transactions on Mechatronics, vol. 30, no. 5, pp. 3880–3891</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tmech.2025.3536627" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2025" data-key="robotic-path-projection-from-2d-square-to-3d-single-patch-surfaces-using-arap-parameteriza">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.23919/iccas66577.2025.11301316" target="_blank" rel="noopener">Robotic Path Projection from 2D Square to 3D Single Patch Surfaces Using ARAP Parameterization</a></h3>
+                <p class="pub-authors">Mahrukh Mahrukh, <span class="me">Gianluca Palli</span>, Mattia Gambazza, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">2025 25th International Conference on Control, Automation and Systems (ICCAS), pp. 321–326</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.23919/iccas66577.2025.11301316" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2025" data-key="user-tailored-fuzzy-based-grasp-strength-regulation-in-myocontrolled-robotic-hands">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/etfa65518.2025.11205666" target="_blank" rel="noopener">User-Tailored Fuzzy-Based Grasp Strength Regulation in Myocontrolled Robotic Hands</a></h3>
+                <p class="pub-authors">Mohammad Sheikhsamad, <span class="me">Roberto Meattini</span>, <span class="me">Davide Chiaravalli</span>, Raal Suárez, Jan Rosell, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2025 IEEE 30th International Conference on Emerging Technologies and Factory Automation (ETFA), pp. 1–8</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/etfa65518.2025.11205666" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2025" data-key="design-and-integration-of-a-robotic-gripper-and-warehouse-system-for-automated-cable-assem">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/case58245.2025.11163907" target="_blank" rel="noopener">Design and Integration of a Robotic Gripper and Warehouse System for Automated Cable Assembly</a></h3>
+                <p class="pub-authors"><span class="me">Andrea Govoni</span>, <span class="me">Michela Cavuoto</span>, Miriam Massini Alunni, Maurizio Indovini, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2025 IEEE 21st International Conference on Automation Science and Engineering (CASE), pp. 596–601</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/case58245.2025.11163907" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2025" data-key="singularity-avoidance-for-6-dof-robots-using-holonomic-base-through-task-priority-approach">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim64088.2025.11175634" target="_blank" rel="noopener">Singularity Avoidance for 6-DOF Robots Using Holonomic Base Through Task-Priority Approach</a></h3>
+                <p class="pub-authors"><span class="me">Andrea Govoni</span>, Emanuele Pedivellano, <span class="me">Michela Cavuoto</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2025 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 1–6</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim64088.2025.11175634" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2025" data-key="towards-automated-connector-assembly-wire-insertion-combining-tactile-and-vision-sensors">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim64088.2025.11175819" target="_blank" rel="noopener">Towards Automated Connector Assembly: Wire Insertion Combining Tactile and Vision Sensors</a></h3>
+                <p class="pub-authors">Michele Mirto, <span class="me">Alessio Caporali</span>, Gianluca Laudante, Salvatore Pirozzi, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2025 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 1–7</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim64088.2025.11175819" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2025" data-key="comparison-of-weakly-supervised-regression-of-semg-signals-with-state-of-the-art-unsupervi">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.ifacol.2025.10.197" target="_blank" rel="noopener">Comparison Of Weakly Supervised Regression Of sEMG Signals With State-Of-the-Art Unsupervised Methods For Robot Hand Control: A Pilot Study</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, <span class="me">Alessandra Bernardini</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IFAC-PapersOnLine, vol. 59, no. 18, pp. 61–66</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.ifacol.2025.10.197" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="pub-year" data-year="2024">
+            <h2 class="pub-year-label">2024<small>14 papers</small></h2>
+            <ol class="pubs">
+              <li class="pub" data-type="journal" data-year="2024" data-key="dlo-perceiver-grounding-large-language-model-for-deformable-linear-objects-perception">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2024.3491428" target="_blank" rel="noopener">DLO Perceiver: Grounding Large Language Model for Deformable Linear Objects Perception</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Kevin Galassi</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 9, no. 12, pp. 11385–11392</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2024.3491428" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2024" data-key="neuromuscular-interfacing-for-advancing-kinesthetic-and-teleoperated-programming-by-demons">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/toh.2024.3484373" target="_blank" rel="noopener">Neuromuscular Interfacing for Advancing Kinesthetic and Teleoperated Programming by Demonstration of Collaborative Robots</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, Armando Amerì, <span class="me">Alessandra Bernardini</span>, Javier Gonzalez-Huarte, Aitor Ibarguren, <span class="me">Claudio Melchiorri</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE Transactions on Haptics, vol. 18, no. 1, pp. 45–57</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/toh.2024.3484373" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2024" data-key="learning-passive-policies-with-virtual-energy-tanks-in-robotics">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1049/cth2.12558" target="_blank" rel="noopener">Learning passive policies with virtual energy tanks in robotics</a></h3>
+                <p class="pub-authors"><span class="me">Riccardo Zanella</span>, <span class="me">Gianluca Palli</span>, Stefano Stramigioli, <span class="me">Federico Califano</span></p>
+                <p class="pub-venue">IET Control Theory &amp; Applications, vol. 18, no. 5, pp. 541–550</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1049/cth2.12558" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2024" data-key="deformable-linear-objects-manipulation-with-online-model-parameters-estimation">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2024.3357310" target="_blank" rel="noopener">Deformable Linear Objects Manipulation With Online Model Parameters Estimation</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, Piotr Kicki, <span class="me">Kevin Galassi</span>, <span class="me">Riccardo Zanella</span>, Krzysztof Walas, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 9, no. 3, pp. 2598–2605</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2024.3357310" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                  <a class="chip-link" href="/files/publications/DLO_manipulation_RAL_2024.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pdf"/></svg><span>PDF</span></a>
+                  <a class="chip-link" href="https://sites.google.com/view/dlo-manipulation" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg><span>Website</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2024" data-key="a-monolithic-cable-driven-compliant-wrist-for-prosthetic-arms">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tmech.2023.3345215" target="_blank" rel="noopener">A Monolithic Cable-Driven Compliant Wrist for Prosthetic Arms</a></h3>
+                <p class="pub-authors">Mario Baggetta, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span>, Giovanni Berselli</p>
+                <p class="pub-venue">IEEE/ASME Transactions on Mechatronics, vol. 29, no. 2, pp. 1052–1063</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tmech.2023.3345215" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2024" data-key="deformable-objects-perception-is-just-a-few-clicks-away-dense-annotations-from-sparse-inpu">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/iros58592.2024.10802495" target="_blank" rel="noopener">Deformable Objects Perception is Just a Few Clicks Away – Dense Annotations from Sparse Inputs</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Kevin Galassi</span>, Matteo Pantano, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 5880–5887</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/iros58592.2024.10802495" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2024" data-key="virtual-prototyping-of-a-cable-driven-compliant-robotic-wrist">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/mesa61532.2024.10704878" target="_blank" rel="noopener">Virtual Prototyping of a Cable-Driven Compliant Robotic Wrist</a></h3>
+                <p class="pub-authors">Mario Baggetta, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span>, Giovanni Berselli</p>
+                <p class="pub-venue">2024 20th IEEE/ASME International Conference on Mechatronic and Embedded Systems and Applications (MESA), pp. 1–7</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/mesa61532.2024.10704878" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2024" data-key="challenges-in-detecting-and-analyzing-eeg-error-related-potentials-lessons-from-a-case-stu">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/ro-man60168.2024.10731468" target="_blank" rel="noopener">Challenges in Detecting and Analyzing EEG Error-Related Potentials: Lessons from a Case Study in HRI</a></h3>
+                <p class="pub-authors">Alessandra Fava, Adriana Lucchese, <span class="me">Roberto Meattini</span>, <span class="me">Gianluca Palli</span>, Valeria Villani, Lorenzo Sabattini</p>
+                <p class="pub-venue">2024 33rd IEEE International Conference on Robot and Human Interactive Communication (ROMAN), pp. 1618–1623</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/ro-man60168.2024.10731468" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2024" data-key="additively-manufactured-flexible-endoscope-driven-by-guided-antagonistic-twisted-string-ac">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim55361.2024.10637078" target="_blank" rel="noopener">Additively Manufactured Flexible Endoscope Driven By Guided Antagonistic Twisted String Actuation: A Pilot Experimental Evaluation</a></h3>
+                <p class="pub-authors">Edoardo Fratarcangeli, <span class="me">Andrea Govoni</span>, Giuliano A. Giacoppo, Leonhard Heinrich, <span class="me">Roberto Meattini</span>, Peter P. Pott, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2024 IEEE International Conference on Advanced Intelligent Mechatronics (AIM), pp. 867–872</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim55361.2024.10637078" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2024" data-key="stiffness-aware-genetic-algorithm-for-robotic-path-finding-optimization">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim55361.2024.10637048" target="_blank" rel="noopener">Stiffness-Aware Genetic Algorithm for Robotic Path Finding Optimization</a></h3>
+                <p class="pub-authors"><span class="me">Alex Pasquali</span>, Miriam Massini Alunni, <span class="me">Davide Chiaravalli</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2024 IEEE International Conference on Advanced Intelligent Mechatronics (AIM), pp. 942–947</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim55361.2024.10637048" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2024" data-key="scalable-shared-encoding-architecture-for-learning-based-error-detection-in-robotic-wiring">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim55361.2024.10637054" target="_blank" rel="noopener">Scalable Shared Encoding Architecture for Learning-Based Error Detection in Robotic Wiring Harness Assembly</a></h3>
+                <p class="pub-authors"><span class="me">Kevin Galassi</span>, <span class="me">Alessio Caporali</span>, Gianluca Laudante, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2024 IEEE International Conference on Advanced Intelligent Mechatronics (AIM), pp. 518–523</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim55361.2024.10637054" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2024" data-key="monocular-estimation-of-connector-orientation-combining-deformable-linear-object-priors-an">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim55361.2024.10637081" target="_blank" rel="noopener">Monocular Estimation of Connector Orientation: Combining Deformable Linear Object Priors and Smooth Angle Classification</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Kevin Galassi</span>, Giovanni Berselli, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2024 IEEE International Conference on Advanced Intelligent Mechatronics (AIM), pp. 799–804</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim55361.2024.10637081" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2024" data-key="attention-based-cloth-manipulation-from-model-free-topological-representation">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/icra57147.2024.10610241" target="_blank" rel="noopener">Attention-Based Cloth Manipulation from Model-free Topological Representation</a></h3>
+                <p class="pub-authors"><span class="me">Kevin Galassi</span>, Bingbing Wu, Julien Perez, <span class="me">Gianluca Palli</span>, Jean-Michel Renders</p>
+                <p class="pub-venue">2024 IEEE International Conference on Robotics and Automation (ICRA), pp. 18207–18213</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/icra57147.2024.10610241" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2024" data-key="development-of-an-automated-land-based-system-for-cow-monitoring">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=EcrzJJMAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=EcrzJJMAAAAJ:Ri6SYOTghG4C" target="_blank" rel="noopener">Development of an automated land-based system for cow monitoring</a></h3>
+                <p class="pub-authors">M. Bovo, <span class="me">G. Palli</span>, D. Torreggiani, P. Tassinari</p>
+                <p class="pub-venue">11th European Conference on Precision Livestock Farming, 1480-1486</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=EcrzJJMAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=EcrzJJMAAAAJ:Ri6SYOTghG4C" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg><span>Scholar</span></a>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="pub-year" data-year="2023">
+            <h2 class="pub-year-label">2023<small>11 papers</small></h2>
+            <ol class="pubs">
+              <li class="pub" data-type="journal" data-year="2023" data-key="self-supervised-regression-of-semg-signals-combining-non-negative-matrix-factorization-wit">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2023.3329764" target="_blank" rel="noopener">Self-Supervised Regression of sEMG Signals Combining Non-Negative Matrix Factorization With Deep Neural Networks for Robot Hand Multiple Grasping Motion Control</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, <span class="me">Alessio Caporali</span>, <span class="me">Alessandra Bernardini</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 8, no. 12, pp. 8533–8540</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2023.3329764" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                  <a class="chip-link" href="/files/publications/NN_NMF_RAL.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pdf"/></svg><span>PDF</span></a>
+                  <a class="chip-link" href="https://github.com/lar-unibo/self-supervised-regression-emg" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span>Code</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2023" data-key="deformable-linear-objects-3d-shape-estimation-and-tracking-from-multiple-2d-views">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2023.3273518" target="_blank" rel="noopener">Deformable Linear Objects 3D Shape Estimation and Tracking From Multiple 2D Views</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Kevin Galassi</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 8, no. 6, pp. 3852–3859</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2023.3273518" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                  <a class="chip-link" href="/files/publications/DLO3DS_RAL.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pdf"/></svg><span>PDF</span></a>
+                  <a class="chip-link" href="https://github.com/lar-unibo/DLO3DS" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span>Code</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2023" data-key="robot-programming-by-demonstration-trajectory-learning-enhanced-by-semg-based-user-hand-st">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tro.2023.3258669" target="_blank" rel="noopener">Robot Programming by Demonstration: Trajectory Learning Enhanced by sEMG-Based User Hand Stiffness Estimation</a></h3>
+                <p class="pub-authors"><span class="me">Luigi Biagiotti</span>, <span class="me">Roberto Meattini</span>, <span class="me">Davide Chiaravalli</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IEEE Transactions on Robotics, vol. 39, no. 4, pp. 3259–3278</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tro.2023.3258669" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2023" data-key="rt-dlo-real-time-deformable-linear-objects-instance-segmentation">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tii.2023.3245641" target="_blank" rel="noopener">RT-DLO: Real-Time Deformable Linear Objects Instance Segmentation</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Kevin Galassi</span>, Bare Luka Žagar, <span class="me">Riccardo Zanella</span>, <span class="me">Gianluca Palli</span>, Alois C Knoll</p>
+                <p class="pub-venue">IEEE Transactions on Industrial Informatics, vol. 19, no. 11, pp. 11333–11342</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tii.2023.3245641" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                  <a class="chip-link" href="/files/publications/RT-DLO_Real-Time_Deformable_Linear_Objects_Instance_Segmentation.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pdf"/></svg><span>PDF</span></a>
+                  <a class="chip-link" href="https://github.com/lar-unibo/RT-DLO" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span>Code</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2023" data-key="design-and-experimental-validation-of-an-adaptive-fast-finite-time-observer-on-uncertain-e">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.conengprac.2022.105391" target="_blank" rel="noopener">Design and experimental validation of an adaptive fast-finite-time observer on uncertain electro-hydraulic systems</a></h3>
+                <p class="pub-authors">Hamid Razmjooei, <span class="me">Gianluca Palli</span>, Elahe Abdi, Mario Terzo, Salvatore Strano</p>
+                <p class="pub-venue">Control Engineering Practice, vol. 131, p. 105391</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.conengprac.2022.105391" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2023" data-key="a-weakly-supervised-semi-automatic-image-labeling-approach-for-deformable-linear-objects">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2023.3234799" target="_blank" rel="noopener">A Weakly Supervised Semi-Automatic Image Labeling Approach for Deformable Linear Objects</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, Matteo Pantano, Lucas Janisch, Daniel Regulin, <span class="me">Gianluca Palli</span>, Dongheui Lee</p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 8, no. 2, pp. 1013–1020</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2023.3234799" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                  <a class="chip-link" href="/files/publications/DLOWSL_RAL.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pdf"/></svg><span>PDF</span></a>
+                  <a class="chip-link" href="https://github.com/lar-unibo/DLO-WSL" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span>Code</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2023" data-key="adaptive-fast-finite-time-extended-state-observer-design-for-uncertain-electro-hydraulic-s">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.ejcon.2022.100749" target="_blank" rel="noopener">Adaptive fast-finite-time extended state observer design for uncertain electro-hydraulic systems</a></h3>
+                <p class="pub-authors">Hamid Razmjooei, <span class="me">Gianluca Palli</span>, Farrokh Janabi-Sharifi, Shahpour Alirezaee</p>
+                <p class="pub-venue">European Journal of Control, vol. 69, p. 100749</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.ejcon.2022.100749" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2023" data-key="conceptual-design-and-virtual-prototyping-of-a-compliant-low-cost-prosthetic-hand">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1115/smasis2023-110461" target="_blank" rel="noopener">Conceptual Design and Virtual Prototyping of a Compliant, Low-Cost Prosthetic Hand</a></h3>
+                <p class="pub-authors">Mario Baggetta, Vazzoler Margherita, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span>, Giovanni Berselli</p>
+                <p class="pub-venue">ASME 2023 Conference on Smart Materials, Adaptive Structures and Intelligent Systems</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1115/smasis2023-110461" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2023" data-key="copy-and-paste-augmentation-for-deformable-wiring-harness-bags-segmentation">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim46323.2023.10196168" target="_blank" rel="noopener">Copy and Paste Augmentation for Deformable Wiring Harness Bags Segmentation</a></h3>
+                <p class="pub-authors">Bare Luka Žagar, <span class="me">Alessio Caporali</span>, Amadeusz Szymko, Piotr Kicki, Krzysztof Walas, <span class="me">Gianluca Palli</span>, Alois C Knoll</p>
+                <p class="pub-venue">2023 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 721–726</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim46323.2023.10196168" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2023" data-key="a-vision-based-shared-autonomy-framework-for-deformable-linear-objects-manipulation">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim46323.2023.10196145" target="_blank" rel="noopener">A Vision-based Shared Autonomy Framework for Deformable Linear Objects Manipulation</a></h3>
+                <p class="pub-authors"><span class="me">Davide Chiaravalli</span>, <span class="me">Alessio Caporali</span>, Anna Friz, <span class="me">Roberto Meattini</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2023 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 733–738</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim46323.2023.10196145" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2023" data-key="a-fast-score-based-method-for-robotic-task-free-point-to-point-path-learning">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim46323.2023.10196238" target="_blank" rel="noopener">A Fast Score-Based Method for Robotic Task-Free Point-to-Point Path Learning</a></h3>
+                <p class="pub-authors"><span class="me">Alex Pasquali</span>, <span class="me">Kevin Galassi</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2023 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 1159–1164</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim46323.2023.10196238" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="pub-year" data-year="2022">
+            <h2 class="pub-year-label">2022<small>14 papers</small></h2>
+            <ol class="pubs">
+              <li class="pub" data-type="journal" data-year="2022" data-key="design-modeling-and-control-of-a-variable-stiffness-elbow-joint">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1007/s00170-022-09886-7" target="_blank" rel="noopener">Design, modeling, and control of a variable stiffness elbow joint</a></h3>
+                <p class="pub-authors">Mario Baggetta, Giovanni Berselli, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">The International Journal of Advanced Manufacturing Technology, vol. 122, no. 11-12, pp. 4437–4451</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1007/s00170-022-09886-7" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2022" data-key="human-to-robot-hand-motion-mapping-methods-review-and-classification">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tro.2022.3205510" target="_blank" rel="noopener">Human to Robot Hand Motion Mapping Methods: Review and Classification</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, Raúl Suárez, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IEEE Transactions on Robotics, vol. 39, no. 2, pp. 842–861</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tro.2022.3205510" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2022" data-key="fastdlo-fast-deformable-linear-objects-instance-segmentation">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2022.3189791" target="_blank" rel="noopener">FASTDLO: Fast Deformable Linear Objects Instance Segmentation</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Kevin Galassi</span>, <span class="me">Riccardo Zanella</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 7, no. 4, pp. 9075–9082</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2022.3189791" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                  <a class="chip-link" href="/files/publications/FASTDLO_Fast_Deformable_Linear_Objects_Instance_Segmentation.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pdf"/></svg><span>PDF</span></a>
+                  <a class="chip-link" href="https://github.com/lar-unibo/fastdlo" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span>Code</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2022" data-key="ariadne-deep-learning-based-augmented-framework-for-the-instance-segmentation-of-wires">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tii.2022.3154477" target="_blank" rel="noopener">Ariadne+: Deep Learning–Based Augmented Framework for the Instance Segmentation of Wires</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Riccardo Zanella</span>, Daniele De Greogrio, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE Transactions on Industrial Informatics, vol. 18, no. 12, pp. 8607–8617</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tii.2022.3154477" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                  <a class="chip-link" href="/files/publications/Ariadne_Deep_Learning--Based_Augmented_Framework_for_the_Instance_Segmentation_of_Wires.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pdf"/></svg><span>PDF</span></a>
+                  <a class="chip-link" href="https://github.com/lar-unibo/ariadne_plus" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span>Code</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2022" data-key="disturbance-observer-based-nonlinear-feedback-control-for-position-tracking-of-electro-hyd">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.ejcon.2022.100659" target="_blank" rel="noopener">Disturbance observer-based nonlinear feedback control for position tracking of electro-hydraulic systems in a finite time</a></h3>
+                <p class="pub-authors">Hamid Razmjooei, <span class="me">Gianluca Palli</span>, Morad Nazari</p>
+                <p class="pub-venue">European Journal of Control, vol. 67, p. 100659</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.ejcon.2022.100659" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2022" data-key="continuous-finite-time-extended-state-observer-design-for-electro-hydraulic-systems">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.jfranklin.2022.04.030" target="_blank" rel="noopener">Continuous finite-time extended state observer design for electro-hydraulic systems</a></h3>
+                <p class="pub-authors">Hamid Razmjooei, <span class="me">Gianluca Palli</span>, Elahe Abdi</p>
+                <p class="pub-venue">Journal of the Franklin Institute, vol. 359, no. 10, pp. 5036–5055</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.jfranklin.2022.04.030" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2022" data-key="non-linear-finite-time-tracking-control-of-uncertain-robotic-manipulators-using-time-varyi">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1007/s10846-022-01571-x" target="_blank" rel="noopener">Non-linear Finite-Time Tracking Control of Uncertain Robotic Manipulators Using Time-Varying Disturbance Observer-Based Sliding Mode Method</a></h3>
+                <p class="pub-authors">Hamid Razmjooei, Mohammad Hossein Shafiei, <span class="me">Gianluca Palli</span>, Mohammad Mehdi Arefi</p>
+                <p class="pub-venue">Journal of Intelligent &amp; Robotic Systems, vol. 104, no. 2</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1007/s10846-022-01571-x" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2022" data-key="finite-time-continuous-extended-state-observers-design-and-experimental-validation-on-elec">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.mechatronics.2022.102812" target="_blank" rel="noopener">Finite-time continuous extended state observers: design and experimental validation on electro-hydraulic systems✰</a></h3>
+                <p class="pub-authors">Hamid Razmjooei, <span class="me">Gianluca Palli</span>, Elahe Abdi, Salvatore Strano, Mario Terzo</p>
+                <p class="pub-venue">Mechatronics, vol. 85, p. 102812</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.mechatronics.2022.102812" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2022" data-key="estimation-of-tire-road-contact-forces-through-a-model-based-approach-employing-strain-mea">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1007/s11012-022-01548-y" target="_blank" rel="noopener">Estimation of tire-road contact forces through a model-based approach employing strain measurements</a></h3>
+                <p class="pub-authors">Daniel Garcia-Pozuelo, Oluremi Olatunbosun, <span class="me">Gianluca Palli</span>, Salvatore Strano, Mario Terzo, Ciro Tordela</p>
+                <p class="pub-venue">Meccanica, vol. 57, no. 8, pp. 1801–1829</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1007/s11012-022-01548-y" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2022" data-key="semg-based-minimally-supervised-regression-using-soft-dtw-neural-networks-for-robot-hand-g">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2022.3193247" target="_blank" rel="noopener">sEMG-Based Minimally Supervised Regression Using Soft-DTW Neural Networks for Robot Hand Grasping Control</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, <span class="me">Alessandra Bernardini</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 7, no. 4, pp. 10144–10151</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2022.3193247" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2022" data-key="simulative-evaluation-of-a-joint-cartesian-hybrid-motion-mapping-for-robot-hands-based-on-" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.3389/frobt.2022.878364" target="_blank" rel="noopener">Simulative Evaluation of a Joint-Cartesian Hybrid Motion Mapping for Robot Hands Based on Spatial In-Hand Information</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, <span class="me">Davide Chiaravalli</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">Frontiers in Robotics and AI, vol. 9</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.3389/frobt.2022.878364" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2022" data-key="cable-detection-and-manipulation-for-dlo-in-hole-assembly-tasks" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/icps51978.2022.9817006" target="_blank" rel="noopener">Cable Detection and Manipulation for DLO-in-Hole Assembly Tasks</a></h3>
+                <p class="pub-authors"><span class="me">Kevin Galassi</span>, <span class="me">Alessio Caporali</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2022 IEEE 5th International Conference on Industrial Cyber-Physical Systems (ICPS), pp. 01–06</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/icps51978.2022.9817006" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2022" data-key="mechatronic-design-and-physical-prototyping-of-a-three-fingered-gripper-for-underwater-man" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1115/smasis2022-92010" target="_blank" rel="noopener">Mechatronic Design and Physical Prototyping of a Three-Fingered Gripper for Underwater Manipulation</a></h3>
+                <p class="pub-authors">Mario Baggetta, Giovanni Berselli, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">ASME 2022 Conference on Smart Materials, Adaptive Structures and Intelligent Systems</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1115/smasis2022-92010" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2022" data-key="experimental-evaluation-of-intuitive-programming-of-robot-interaction-behaviour-during-kin" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.ifacol.2023.01.125" target="_blank" rel="noopener">Experimental Evaluation Of Intuitive Programming Of Robot Interaction Behaviour During Kinesthetic Teaching Using sEMG And Cutaneous Feedback</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, <span class="me">Davide Chiaravalli</span>, <span class="me">Kevin Galassi</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IFAC-PapersOnLine, vol. 55, no. 38, pp. 1–6</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.ifacol.2023.01.125" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="pub-year" data-year="2021">
+            <h2 class="pub-year-label">2021<small>18 papers</small></h2>
+            <ol class="pubs">
+              <li class="pub" data-type="journal" data-year="2021" data-key="toward-future-automatic-warehouses-an-autonomous-depalletizing-system-based-on-mobile-mani">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.3390/app11135959" target="_blank" rel="noopener">Toward Future Automatic Warehouses: An Autonomous Depalletizing System Based on Mobile Manipulation and 3D Perception</a></h3>
+                <p class="pub-authors">Jacopo Aleotti, Alberto Baldassarri, Marcello Bonfè, Marco Carricato, <span class="me">Davide Chiaravalli</span>, Roberto Di Leva, Cesare Fantuzzi, Saverio Farsoni, Gino Innero, Dario Lodi Rizzini, <span class="me">Claudio Melchiorri</span>, Riccardo Monica, <span class="me">Gianluca Palli</span>, Jacopo Rizzi, Lorenzo Sabattini, Gianluca Sampietro, Federico Zaccaria</p>
+                <p class="pub-venue">Applied Sciences, vol. 11, no. 13, p. 5959</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.3390/app11135959" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2021" data-key="a-mobile-robotized-system-for-depalletizing-applications-design-and-experimentation">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/access.2021.3092580" target="_blank" rel="noopener">A Mobile Robotized System for Depalletizing Applications: Design and Experimentation</a></h3>
+                <p class="pub-authors">Federico Zaccaria, Alberto Baldassarri, <span class="me">Gianluca Palli</span>, Marco Carricato</p>
+                <p class="pub-venue">IEEE Access, vol. 9, pp. 96682–96691</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/access.2021.3092580" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2021" data-key="exploiting-in-hand-knowledge-in-hybrid-joint-cartesian-mapping-for-anthropomorphic-robotic" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2021.3078658" target="_blank" rel="noopener">Exploiting In-Hand Knowledge in Hybrid Joint-Cartesian Mapping for Anthropomorphic Robotic Hands</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, <span class="me">Davide Chiaravalli</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 6, no. 3, pp. 5517–5524</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2021.3078658" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2021" data-key="new-model-based-manipulation-technique-for-reshaping-deformable-linear-objects" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1007/s00170-021-08107-x" target="_blank" rel="noopener">New model-based manipulation technique for reshaping deformable linear objects</a></h3>
+                <p class="pub-authors">Alaa Khalifa, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">The International Journal of Advanced Manufacturing Technology, vol. 118, no. 11-12, pp. 3575–3583</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1007/s00170-021-08107-x" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2021" data-key="robot-learning-based-pipeline-for-autonomous-reshaping-of-a-deformable-linear-object-in-cl" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/access.2021.3118209" target="_blank" rel="noopener">Robot Learning-Based Pipeline for Autonomous Reshaping of a Deformable Linear Object in Cluttered Backgrounds</a></h3>
+                <p class="pub-authors"><span class="me">Riccardo Zanella</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">IEEE Access, vol. 9, pp. 138296–138306</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/access.2021.3118209" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                  <a class="chip-link" href="/files/publications/Robot_Learning-Based_Pipeline_for_Autonomous_Reshaping_of_a_Deformable_Linear_Object_in_Cluttered_Backgrounds.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pdf"/></svg><span>PDF</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2021" data-key="combining-unsupervised-muscle-co-contraction-estimation-with-bio-feedback-allows-augmented" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2021.3092269" target="_blank" rel="noopener">Combining Unsupervised Muscle Co-Contraction Estimation With Bio-Feedback Allows Augmented Kinesthetic Teaching</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, <span class="me">Davide Chiaravalli</span>, <span class="me">Luigi Biagiotti</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 6, no. 4, pp. 6180–6187</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2021.3092269" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2021" data-key="symplectic-integration-for-multivariate-dynamic-spline-based-model-of-deformable-linear-ob" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1115/1.4052571" target="_blank" rel="noopener">Symplectic Integration for Multivariate Dynamic Spline-Based Model of Deformable Linear Objects</a></h3>
+                <p class="pub-authors">Alaa Khalifa, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">Journal of Computational and Nonlinear Dynamics, vol. 17, no. 1</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1115/1.4052571" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2021" data-key="beyond-the-baseline-3d-reconstruction-of-tiny-objects-withsingle-camerastereorobot" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/access.2021.3108626" target="_blank" rel="noopener">Beyond the Baseline: 3D Reconstruction of Tiny Objects WithSingle CameraStereoRobot</a></h3>
+                <p class="pub-authors"><span class="me">Daniele De Gregorio</span>, Matteo Poggi, Pierluigi Zama Ramirez, <span class="me">Gianluca Palli</span>, Stefano Mattoccia, Luigi Di Stefano</p>
+                <p class="pub-venue">IEEE Access, vol. 9, pp. 119755–119765</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/access.2021.3108626" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2021" data-key="auto-generated-wires-dataset-for-semantic-segmentation-with-domain-independence">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/icccr49711.2021.9349395" target="_blank" rel="noopener">Auto-generated Wires Dataset for Semantic Segmentation with Domain-Independence</a></h3>
+                <p class="pub-authors"><span class="me">Riccardo Zanella</span>, <span class="me">Alessio Caporali</span>, Kalyan Tadaka, <span class="me">Daniele De Gregorio</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2021 International Conference on Computer, Control and Robotics (ICCCR), pp. 292–298</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/icccr49711.2021.9349395" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                  <a class="chip-link" href="/files/publications/Auto-generated_Wires_Dataset_for_Semantic_Segmentation_with_Domain-Independence.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pdf"/></svg><span>PDF</span></a>
+                  <a class="chip-link" href="https://www.kaggle.com/datasets/zanellar/electric-wires-image-segmentation" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-dataset"/></svg><span>Dataset</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2021" data-key="semg-based-regression-of-hand-kinematics-with-temporal-convolutional-networks-on-a-low-pow">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/coins51742.2021.9524188" target="_blank" rel="noopener">sEMG-based Regression of Hand Kinematics with Temporal Convolutional Networks on a Low-Power Edge Microcontroller</a></h3>
+                <p class="pub-authors">Marcello Zanghieri, Simone Benatti, Alessio Burrello, Victor Javier Kartsch Morinigo, <span class="me">Roberto Meattini</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span>, Luca Benini</p>
+                <p class="pub-venue">2021 IEEE International Conference on Omni-Layer Intelligent Systems (COINS), pp. 1–6</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/coins51742.2021.9524188" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2021" data-key="robotic-wires-manipulation-for-switchgear-cabling-and-wiring-harness-manufacturing">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/icps49255.2021.9468128" target="_blank" rel="noopener">Robotic Wires Manipulation for Switchgear Cabling and Wiring Harness Manufacturing</a></h3>
+                <p class="pub-authors"><span class="me">Kevin Galassi</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2021 4th IEEE International Conference on Industrial Cyber-Physical Systems (ICPS), pp. 531–536</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/icps49255.2021.9468128" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2021" data-key="3d-dlo-shape-detection-and-grasp-planning-from-multiple-2d-views">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim46487.2021.9517655" target="_blank" rel="noopener">3D DLO Shape Detection and Grasp Planning from Multiple 2D Views</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Kevin Galassi</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2021 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 424–429</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim46487.2021.9517655" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2021" data-key="combining-vision-and-tactile-data-for-cable-grasping" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim46487.2021.9517447" target="_blank" rel="noopener">Combining Vision and Tactile Data for Cable Grasping</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Kevin Galassi</span>, Gianluca Laudante, <span class="me">Gianluca Palli</span>, Salvatore Pirozzi</p>
+                <p class="pub-venue">2021 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 436–441</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim46487.2021.9517447" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2021" data-key="deformable-objects-grasping-and-shape-detection-with-tactile-fingers-and-industrial-grippe" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/icps49255.2021.9468151" target="_blank" rel="noopener">Deformable Objects Grasping and Shape Detection with Tactile Fingers and Industrial Grippers</a></h3>
+                <p class="pub-authors">Pablo Malvido Fresnillo, Saigopal Vasudevan, Wael M. Mohammed, Jose L. Martinez Lastra, Gianluca Laudante, Salvatore Pirozzi, <span class="me">Kevin Galassi</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2021 4th IEEE International Conference on Industrial Cyber-Physical Systems (ICPS), pp. 525–530</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/icps49255.2021.9468151" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2021" data-key="validating-dlo-models-from-shape-observation" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/aim46487.2021.9517570" target="_blank" rel="noopener">Validating DLO Models from Shape Observation</a></h3>
+                <p class="pub-authors"><span class="me">Gianluca Palli</span>, Salvatore Pirozzi</p>
+                <p class="pub-venue">2021 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), pp. 430–435</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/aim46487.2021.9517570" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2021" data-key="effective-deployment-of-cnns-for-3dof-pose-estimation-and-grasping-in-industrial-settings" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/icpr48806.2021.9411912" target="_blank" rel="noopener">Effective Deployment of CNNs for 3DoF Pose Estimation and Grasping in Industrial Settings</a></h3>
+                <p class="pub-authors"><span class="me">Daniele De Gregorio</span>, <span class="me">Riccardo Zanella</span>, <span class="me">Gianluca Palli</span>, Luigi Di Stefano</p>
+                <p class="pub-venue">2020 25th International Conference on Pattern Recognition (ICPR), pp. 7419–7426</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/icpr48806.2021.9411912" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2021" data-key="a-cyber-physical-system-for-clothes-detection-manipulation-and-washing-machine-loading" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/icps49255.2021.9468189" target="_blank" rel="noopener">A Cyber-Physical System for Clothes Detection, Manipulation and Washing Machine Loading</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, Wendwosen Bellete Bedada, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2021 4th IEEE International Conference on Industrial Cyber-Physical Systems (ICPS), pp. 519–524</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/icps49255.2021.9468189" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2021" data-key="towards-a-twisted-string-actuated-haptic-device-experimental-testing-of-a-2-d-virtual-envi" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/icar53236.2021.9659420" target="_blank" rel="noopener">Towards a Twisted String Actuated Haptic Device: Experimental Testing of a 2-D Virtual Environment and Teleoperation Interface</a></h3>
+                <p class="pub-authors">Linda Feenstra, <span class="me">Umberto Scarcia</span>, <span class="me">Riccardo Zanella</span>, <span class="me">Roberto Meattini</span>, <span class="me">Davide Chiaravalli</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">2021 20th International Conference on Advanced Robotics (ICAR), pp. 757–762</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/icar53236.2021.9659420" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="pub-year" data-year="2020">
+            <h2 class="pub-year-label">2020<small>13 papers</small></h2>
+            <ol class="pubs">
+              <li class="pub" data-type="journal" data-year="2020" data-key="a-semg-driven-soft-exosuit-based-on-twisted-string-actuators-for-elbow-assistive-applicati">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2020.2988152" target="_blank" rel="noopener">A sEMG-Driven Soft ExoSuit Based on Twisted String Actuators for Elbow Assistive Applications</a></h3>
+                <p class="pub-authors">Mohssen Hosseini, <span class="me">Roberto Meattini</span>, Andres San-Millan, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span>, Jamie Paik</p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 5, no. 3, pp. 4094–4101</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2020.2988152" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2020" data-key="virtual-and-physical-prototyping-of-a-beam-based-variable-stiffness-actuator-for-safe-huma">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.rcim.2019.101886" target="_blank" rel="noopener">Virtual and physical prototyping of a beam-based variable stiffness actuator for safe human-machine interaction</a></h3>
+                <p class="pub-authors">Pietro Bilancia, Giovanni Berselli, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">Robotics and Computer-Integrated Manufacturing, vol. 65, p. 101886</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.rcim.2019.101886" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2020" data-key="a-novel-adaptive-gain-technique-for-high-order-sliding-mode-observers-with-application-to-">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.ymssp.2020.106875" target="_blank" rel="noopener">A novel adaptive-gain technique for high-order sliding-mode observers with application to electro-hydraulic systems</a></h3>
+                <p class="pub-authors"><span class="me">Gianluca Palli</span>, Salvatore Strano, Mario Terzo</p>
+                <p class="pub-venue">Mechanical Systems and Signal Processing, vol. 144, p. 106875</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.ymssp.2020.106875" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2020" data-key="semg-based-human-in-the-loop-control-of-elbow-assistive-robots-for-physical-tasks-and-musc">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/lra.2020.3010741" target="_blank" rel="noopener">sEMG-Based Human-in-the-Loop Control of Elbow Assistive Robots for Physical Tasks and Muscle Strength Training</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, <span class="me">Davide Chiaravalli</span>, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IEEE Robotics and Automation Letters, vol. 5, no. 4, pp. 5795–5802</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/lra.2020.3010741" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2020" data-key="chattering-free-robust-finite-time-output-feedback-control-scheme-for-a-class-of-uncertain">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1049/iet-cta.2020.0910" target="_blank" rel="noopener">Chattering‐free robust finite‐time output feedback control scheme for a class of uncertain non‐linear systems</a></h3>
+                <p class="pub-authors">Hamid Razmjooei, Mohammad Hossein Shafiei, <span class="me">Gianluca Palli</span>, Asier Ibeas</p>
+                <p class="pub-venue">IET Control Theory &amp; Applications, vol. 14, no. 19, pp. 3168–3178</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1049/iet-cta.2020.0910" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2020" data-key="integration-of-a-multi-camera-vision-system-and-admittance-control-for-robotic-industrial-">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/etfa46521.2020.9212020" target="_blank" rel="noopener">Integration of a Multi-Camera Vision System and Admittance Control for Robotic Industrial Depalletizing</a></h3>
+                <p class="pub-authors"><span class="me">Davide Chiaravalli</span>, <span class="me">Gianluca Palli</span>, Riccardo Monica, Jacopo Aleotti, Dario Lodi Rizzini</p>
+                <p class="pub-venue">2020 25th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA)</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/etfa46521.2020.9212020" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2020" data-key="development-of-a-mobile-robotized-system-for-palletizing-applications">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/etfa46521.2020.9212124" target="_blank" rel="noopener">Development of a Mobile Robotized System for Palletizing Applications</a></h3>
+                <p class="pub-authors">Alberto Baldassarri, Gino Innero, Roberto Di Leva, <span class="me">Gianluca Palli</span>, Marco Carricato</p>
+                <p class="pub-venue">2020 25th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA), pp. 395–401</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/etfa46521.2020.9212124" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2020" data-key="pointcloud-based-identification-of-optimal-grasping-poses-for-cloth-like-deformable-object">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/etfa46521.2020.9211879" target="_blank" rel="noopener">Pointcloud-based Identification of Optimal Grasping Poses for Cloth-like Deformable Objects</a></h3>
+                <p class="pub-authors"><span class="me">Alessio Caporali</span>, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2020 25th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA), pp. 581–586</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/etfa46521.2020.9211879" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2020" data-key="model-based-manipulation-of-deformable-linear-objects-by-multivariate-dynamic-splines">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/icps48405.2020.9274730" target="_blank" rel="noopener">Model-based Manipulation of Deformable Linear Objects by Multivariate Dynamic Splines</a></h3>
+                <p class="pub-authors"><span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">2020 IEEE Conference on Industrial Cyberphysical Systems (ICPS), pp. 520–525</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/icps48405.2020.9274730" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2020" data-key="combined-joint-cartesian-mapping-for-simultaneous-shape-and-precision-teleoperation-of-ant" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.ifacol.2020.12.2726" target="_blank" rel="noopener">Combined Joint-Cartesian Mapping for Simultaneous Shape and Precision Teleoperation of Anthropomorphic Robotic Hands</a></h3>
+                <p class="pub-authors"><span class="me">R. Meattini</span>, <span class="me">D. Chiaravalli</span>, <span class="me">L. Biagiotti</span>, <span class="me">G. Palli</span>, <span class="me">C. Melchiorri</span></p>
+                <p class="pub-venue">IFAC-PapersOnLine, vol. 53, no. 2, pp. 10052–10057</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.ifacol.2020.12.2726" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2020" data-key="a-hybrid-genetic-algorithm-for-pallet-loading-in-real-world-applications" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.ifacol.2020.12.2719" target="_blank" rel="noopener">A Hybrid Genetic Algorithm for Pallet Loading in Real-World Applications</a></h3>
+                <p class="pub-authors">Gabriele Ancora, <span class="me">Gianluca Palli</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">IFAC-PapersOnLine, vol. 53, no. 2, pp. 10006–10010</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.ifacol.2020.12.2719" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2020" data-key="a-safe-and-energy-efficient-robotic-system-for-industrial-automatic-tests-on-domestic-appl" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.promfg.2020.10.064" target="_blank" rel="noopener">A Safe and Energy Efficient Robotic System for Industrial Automatic Tests on Domestic Appliances: Problem Statement and Proof of Concept</a></h3>
+                <p class="pub-authors">Wendwosen Bellete Bedada, Rawan Kalawoun, Ismayil Ahmadli, <span class="me">Gianluca Palli</span></p>
+                <p class="pub-venue">Procedia Manufacturing, vol. 51, pp. 454–461</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.promfg.2020.10.064" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2020" data-key="a-low-cost-tactile-sensor-for-large-surfaces-based-on-deformable-skin-with-embedded-imu" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/icps48405.2020.9274737" target="_blank" rel="noopener">A Low Cost Tactile Sensor for Large Surfaces Based on Deformable Skin with Embedded IMU</a></h3>
+                <p class="pub-authors">Yuki Iwamoto, <span class="me">Roberto Meattini</span>, <span class="me">Davide Chiaravalli</span>, <span class="me">Gianluca Palli</span>, Koji Shibuya, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">2020 IEEE Conference on Industrial Cyberphysical Systems (ICPS), pp. 501–506</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/icps48405.2020.9274737" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="pub-year" data-year="2019">
+            <h2 class="pub-year-label">2019<small>8 papers</small></h2>
+            <ol class="pubs">
+              <li class="pub" data-type="journal" data-year="2019" data-key="semiautomatic-labeling-for-deep-learning-in-robotics">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/tase.2019.2938316" target="_blank" rel="noopener">Semiautomatic Labeling for Deep Learning in Robotics</a></h3>
+                <p class="pub-authors"><span class="me">Daniele De Gregorio</span>, Alessio Tonioni, <span class="me">Gianluca Palli</span>, Luigi Di Stefano</p>
+                <p class="pub-venue">IEEE Transactions on Automation Science and Engineering, vol. 17, no. 2, pp. 611–620</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/tase.2019.2938316" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2019" data-key="a-tactile-based-wire-manipulation-system-for-manufacturing-applications">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.3390/robotics8020046" target="_blank" rel="noopener">A Tactile-Based Wire Manipulation System for Manufacturing Applications</a></h3>
+                <p class="pub-authors"><span class="me">Gianluca Palli</span>, Salvatore Pirozzi</p>
+                <p class="pub-venue">Robotics, vol. 8, no. 2, p. 46</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.3390/robotics8020046" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="journal" data-year="2019" data-key="nonlinear-estimation-of-the-bouc-wen-model-with-parameter-boundaries-application-to-seismi">
+                <div class="pub-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.compstruc.2019.06.006" target="_blank" rel="noopener">Nonlinear estimation of the Bouc-Wen model with parameter boundaries: Application to seismic isolators</a></h3>
+                <p class="pub-authors">Vincenzo Niola, <span class="me">Gianluca Palli</span>, Salvatore Strano, Mario Terzo</p>
+                <p class="pub-venue">Computers &amp; Structures, vol. 222, pp. 1–9</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.compstruc.2019.06.006" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2019" data-key="dlo-in-hole-for-assembly-tasks-with-tactile-feedback-and-lstm-networks" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/codit.2019.8820399" target="_blank" rel="noopener">DLO-in-Hole for Assembly Tasks with Tactile Feedback and LSTM Networks</a></h3>
+                <p class="pub-authors"><span class="me">R. Zanella</span>, <span class="me">D. De Gregorio</span>, S. Pirozzi, <span class="me">G. Palli</span></p>
+                <p class="pub-venue">2019 6th International Conference on Control, Decision and Information Technologies (CoDIT), pp. 285–290</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/codit.2019.8820399" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2019" data-key="synergy-based-control-of-anthropomorphic-robotic-hands-with-contact-force-sensors" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1016/j.ifacol.2019.11.698" target="_blank" rel="noopener">Synergy-Based Control of Anthropomorphic Robotic Hands with Contact Force Sensors</a></h3>
+                <p class="pub-authors">D. Ortenzi, <span class="me">U. Scarcia</span>, <span class="me">R. Meattini</span>, <span class="me">G. Palli</span>, <span class="me">C. Melchiorri</span></p>
+                <p class="pub-venue">IFAC-PapersOnLine, vol. 52, no. 15, pp. 340–345</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1016/j.ifacol.2019.11.698" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2019" data-key="a-control-architecture-for-grasp-strength-regulation-in-myocontrolled-robotic-hands-using-" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1109/icorr.2019.8779476" target="_blank" rel="noopener">A Control Architecture for Grasp Strength Regulation in Myocontrolled Robotic Hands Using Vibrotactile Feedback: Preliminary Results</a></h3>
+                <p class="pub-authors"><span class="me">Roberto Meattini</span>, <span class="me">Luigi Biagiotti</span>, <span class="me">Gianluca Palli</span>, <span class="me">Daniele De Gregorio</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">2019 IEEE 16th International Conference on Rehabilitation Robotics (ICORR), pp. 1272–1277</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1109/icorr.2019.8779476" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="chapter" data-year="2019" data-key="automatized-switchgear-wiring-an-outline-of-the-wires-experiment-results">
+                <div class="pub-meta"><span class="pub-type pub-type--chapter">Book chapter</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1007/978-3-030-22327-4_6" target="_blank" rel="noopener">Automatized Switchgear Wiring: An Outline of the WIRES Experiment Results</a></h3>
+                <p class="pub-authors"><span class="me">Gianluca Palli</span>, Salvatore Pirozzi, Maurizio Indovini, <span class="me">Daniele De Gregorio</span>, <span class="me">Riccardo Zanella</span>, <span class="me">Claudio Melchiorri</span></p>
+                <p class="pub-venue">Springer Tracts in Advanced Robotics, pp. 107–123</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1007/978-3-030-22327-4_6" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+              <li class="pub" data-type="conference" data-year="2019" data-key="let-s-take-a-walk-on-superpixels-graphs-deformable-linear-objects-segmentation-and-model-e" data-source="openalex">
+                <div class="pub-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+                <h3 class="pub-title"><a href="https://doi.org/10.1007/978-3-030-20890-5_42" target="_blank" rel="noopener">Let’s Take a Walk on Superpixels Graphs: Deformable Linear Objects Segmentation and Model Estimation</a></h3>
+                <p class="pub-authors"><span class="me">Daniele De Gregorio</span>, <span class="me">Gianluca Palli</span>, Luigi Di Stefano</p>
+                <p class="pub-venue">Computer Vision – ACCV 2018 (Lecture Notes in Computer Science), pp. 662–677</p>
+                <div class="pub-links">
+                  <a class="chip-link" href="https://doi.org/10.1007/978-3-030-20890-5_42" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                </div>
+              </li>
+            </ol>
+          </section>
+<!-- PUBLICATIONS:END -->
+        </div>
+        <p class="pub-empty" data-pub-empty hidden>No publications match your filters.</p>
+        <p class="pub-source">This list follows <a href="https://scholar.google.com/citations?user=EcrzJJMAAAAJ&amp;hl=en">Prof. Gianluca Palli’s Google Scholar profile</a> (2019 onward) and is updated monthly.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same on every page) -->
+  <footer class="site-footer">
+    <div class="footer-skyline" aria-hidden="true"></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="/" aria-label="Laboratory of Automation and Robotics – home">
+          <img class="brand-logo" src="/files/images/logo/lar_logo_light.png" alt="" width="546" height="240">
+          <span class="brand-text">
+            <svg class="brand-lockup" viewBox="0 0 88 42" width="88" height="42" aria-hidden="true" focusable="false">
+              <text x="0" y="10.5" textLength="88" lengthAdjust="spacing">Laboratory of</text>
+              <text x="0" y="25" textLength="88" lengthAdjust="spacing">Automation</text>
+              <text x="0" y="39.5" textLength="88" lengthAdjust="spacing">and Robotics</text>
+            </svg>
+          </span>
+        </a>
+        <p>Part of the Department of Electrical, Electronic, and Information Engineering “Guglielmo Marconi” (DEI) at the Alma Mater Studiorum – Università di Bologna.</p>
+        <p class="footer-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Bologna, Italy</p>
+      </div>
+
+      <div class="footer-col">
+        <h2>Explore</h2>
+        <ul>
+            <li><a href="/research/">Research</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/people/">People</a></li>
+            <li><a href="/publications/">Publications</a></li>
+            <li><a href="/deformable_linear_objects/">Deformable Linear Objects</a></li>
+            <li><a href="/human_robot_collaboration/">Human–Robot Collaboration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Affiliations</h2>
+        <ul>
+          <li><a href="https://dei.unibo.it/en/index.html" target="_blank" rel="noopener">Department of Electrical, Electronic, and Information Engineering (DEI)</a></li>
+          <li><a href="https://www.unibo.it/en/homepage" target="_blank" rel="noopener">Alma Mater Studiorum – Università di Bologna</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Code &amp; data</h2>
+        <ul>
+          <li><a class="footer-icon-link" href="https://github.com/lar-unibo/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> github.com/lar-unibo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span data-current-year>2026</span> Laboratory of Automation and Robotics · Università di Bologna</span>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

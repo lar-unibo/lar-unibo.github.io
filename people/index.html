@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>People | LAR @ UNIBO</title>
+  <meta name="description" content="The faculty, researchers, students and collaborators of the Laboratory of Automation and Robotics.">
+  <link rel="canonical" href="https://lar-unibo.github.io/people/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LAR @ UNIBO">
+  <meta property="og:title" content="People">
+  <meta property="og:description" content="The faculty, researchers, students and collaborators of the Laboratory of Automation and Robotics.">
+  <meta property="og:url" content="https://lar-unibo.github.io/people/">
+  <meta property="og:image" content="https://lar-unibo.github.io/files/images/logo/og_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#03192a">
+  <link rel="icon" type="image/png" href="/files/images/logo/favicon.png">
+  <link rel="apple-touch-icon" href="/files/images/logo/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css?v=2026-11-07-15">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="/assets/js/site.js?v=2026-11-07-11" defer></script>
+
+  <!-- Google Analytics (only on the live site, not on localhost) -->
+  <script>
+    if (location.hostname === 'lar-unibo.github.io') {
+      var ga = document.createElement('script');
+      ga.async = true;
+      ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-0HGDL6KQQ1';
+      document.head.appendChild(ga);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-0HGDL6KQQ1', { anonymize_ip: false });
+    }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite: use with <svg class="icon" aria-hidden="true"><use href="#i-NAME"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
+    <symbol id="i-paper" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-pdf" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 11v6M9.5 14.5 12 17l2.5-2.5"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="m10 8.5 5.5 3.5-5.5 3.5z"/></symbol>
+    <symbol id="i-dataset" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8v-13M4.5 12c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5a14.5 14.5 0 0 1 0 19M12 2.5a14.5 14.5 0 0 0 0 19"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-gripper" viewBox="0 0 24 24"><path d="M12 2.5V8M6.5 8h11M7.5 8v5.5l-2.5 4M16.5 8v5.5l2.5 4M5 17.5l1.5 3M19 17.5l-1.5 3"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2.5"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9.5 2.5V6M14.5 2.5V6M9.5 18v3.5M14.5 18v3.5M2.5 9.5H6M2.5 14.5H6M18 9.5h3.5M18 14.5h3.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20.5a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M21.5 20.5a6.5 6.5 0 0 0-3.7-5.9"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2.5 12h4l3-8 5 16 3-8h4"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2.5 4.5 13.5H11l-1 8 8.5-11H12z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10.5M19 21V10.5M9.5 21v-5.5h5V21M2.5 10.5 12 4.5l9.5 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.1 7-11.5a7 7 0 0 0-14 0c0 5.4 7 11.5 7 11.5z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header (same on every page) -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Laboratory of Automation and Robotics – home">
+        <img class="brand-logo brand-logo--on-light" src="/files/images/logo/lar_logo.png" alt="" width="546" height="240">
+        <img class="brand-logo brand-logo--on-dark" src="/files/images/logo/lar_logo_light.png" alt="" width="546" height="240">
+        <span class="brand-text">
+          <svg class="brand-lockup" viewBox="0 0 88 42" width="88" height="42" aria-hidden="true" focusable="false">
+            <text x="0" y="10.5" textLength="88" lengthAdjust="spacing">Laboratory of</text>
+            <text x="0" y="25" textLength="88" lengthAdjust="spacing">Automation</text>
+            <text x="0" y="39.5" textLength="88" lengthAdjust="spacing">and Robotics</text>
+          </svg>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/research/">Research</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/people/" class="is-active" aria-current="page">People</a></li>
+          <li><a href="/publications/">Publications</a></li>
+        </ul>
+        <a class="nav-github" href="https://github.com/lar-unibo/" target="_blank" rel="noopener" aria-label="LAR on GitHub">
+          <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <canvas class="cables" data-cables="5" data-calm aria-hidden="true"></canvas>
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container page-hero-inner">
+        <p class="eyebrow eyebrow--light">People</p>
+        <h1>People</h1>
+        <p class="page-lead">The faculty, researchers, students and collaborators of the Laboratory of Automation and Robotics.</p>
+      </div>
+    </section>
+
+    <nav class="subnav" aria-label="People groups" data-subnav>
+      <div class="container subnav-inner">
+        <a href="#head">Head <span class="n">2</span></a>
+        <a href="#senior-researchers">Senior Researchers <span class="n">2</span></a>
+        <a href="#lab-technicians">Lab Technicians <span class="n">2</span></a>
+        <a href="#phd-students">PhD Students <span class="n">8</span></a>
+        <a href="#visiting">Visiting <span class="n">2</span></a>
+        <a href="#external-collaborators">External Collaborators <span class="n">1</span></a>
+        <a href="#photos">Group photos <span class="n">7</span></a>
+      </div>
+    </nav>
+
+    <!--
+      To add a person, copy one <li class="person"> block into the right group.
+      Photos: square images in /files/images/people/. Without a photo, use
+      <span class="initials" data-tone="0..3" aria-hidden="true">AB</span> instead of the <img>.
+      Group counts are updated automatically by the page script.
+    -->
+    <section class="section section--tight">
+      <div class="container">
+
+      <section class="people-group" id="head">
+        <div class="people-group-head reveal">
+          <h2>Head</h2>
+          <span class="count" data-count-auto>2</span>
+        </div>
+        <ul class="people-grid">
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/gianluca_palli.jpg" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3><span class="prefix">Prof.</span> Gianluca Palli</h3>
+              <p>Full Professor</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/gianluca.palli/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Gianluca Palli</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/claudio_melchiorri.jpg" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3><span class="prefix">Prof.</span> Claudio Melchiorri</h3>
+              <p>Full Professor</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/claudio.melchiorri/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Claudio Melchiorri</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="people-group" id="senior-researchers">
+        <div class="people-group-head reveal">
+          <h2>Senior Researchers</h2>
+          <span class="count" data-count-auto>2</span>
+        </div>
+        <ul class="people-grid">
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/roberto_meattini.jpg" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3><span class="prefix">Dr.</span> Roberto Meattini</h3>
+              <p>Fixed-term Researcher in Tenure Track</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/roberto.meattini/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Roberto Meattini</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/alessio_caporali.jpg" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3><span class="prefix">Dr.</span> Alessio Caporali</h3>
+              <p>Junior Assistant Professor (fixed‑term)</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/alessio.caporali/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Alessio Caporali</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="people-group" id="lab-technicians">
+        <div class="people-group-head reveal">
+          <h2>Lab Technicians</h2>
+          <span class="count" data-count-auto>2</span>
+        </div>
+        <ul class="people-grid">
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/davide_chiaravalli.jpg" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3><span class="prefix">Dr.</span> Davide Chiaravalli</h3>
+              <p>Lab Technician</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/davide.chiaravalli2/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Davide Chiaravalli</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/davide_samori.png" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3>Davide Samorì</h3>
+              <p>Lab Technician</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/davide.samori/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Davide Samorì</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="people-group" id="phd-students">
+        <div class="people-group-head reveal">
+          <h2>PhD Students</h2>
+          <span class="count" data-count-auto>8</span>
+        </div>
+        <ul class="people-grid">
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/alex_pasquali.jpg" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3>Alex Pasquali</h3>
+              <p>PhD Student</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/alex.pasquali2/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Alex Pasquali</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/hongyu_lan.jpeg" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3>Hongyu Lan</h3>
+              <p>PhD Student</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/hongyu.lan/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Hongyu Lan</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/nicole_alati.jpeg" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3>Nicole Alati</h3>
+              <p>PhD Student</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/nicole.alati/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Nicole Alati</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/mattia_tafuri.png" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3>Mattia Tafuri</h3>
+              <p>PhD Student</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/mattia.tafuri/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Mattia Tafuri</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+          <li class="person reveal">
+            <div class="person-photo"><span class="initials" data-tone="1" aria-hidden="true">CD</span></div>
+            <div class="person-info">
+              <h3>Chengxiao Dong</h3>
+              <p>PhD Student</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/chengxiao.dong2/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Chengxiao Dong</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/cristina_saccani.png" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3>Cristina Saccani</h3>
+              <p>PhD Student</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/cristina.saccani/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Cristina Saccani</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+          <li class="person reveal">
+            <div class="person-photo"><span class="initials" data-tone="3" aria-hidden="true">DB</span></div>
+            <div class="person-info">
+              <h3>Davide Bargellini</h3>
+              <p>PhD Student</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/davide.bargellini2/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Davide Bargellini</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/qian_chen.png" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3>Qian Chen</h3>
+              <p>PhD Student</p>
+              <a class="person-link" href="https://www.unibo.it/sitoweb/qian.chen3/en" target="_blank" rel="noopener">Webpage<span class="sr-only"> of Qian Chen</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="people-group" id="visiting">
+        <div class="people-group-head reveal">
+          <h2>Visiting</h2>
+          <span class="count" data-count-auto>2</span>
+        </div>
+        <ul class="people-grid">
+          <li class="person reveal">
+            <div class="person-photo"><span class="initials" data-tone="1" aria-hidden="true">AL</span></div>
+            <div class="person-info">
+              <h3>Aohua Liu</h3>
+              <p>Visiting PhD Student</p>
+            </div>
+          </li>
+          <li class="person reveal">
+            <div class="person-photo"><span class="initials" data-tone="2" aria-hidden="true">HY</span></div>
+            <div class="person-info">
+              <h3>Huibao Yang</h3>
+              <p>Visiting Post-Doc</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="people-group" id="external-collaborators">
+        <div class="people-group-head reveal">
+          <h2>External Collaborators</h2>
+          <span class="count" data-count-auto>1</span>
+        </div>
+        <ul class="people-grid">
+          <li class="person reveal">
+            <div class="person-photo"><img src="/files/images/people/luigi_biagiotti.jpg" alt="" loading="lazy" decoding="async"></div>
+            <div class="person-info">
+              <h3><span class="prefix">Prof.</span> Luigi Biagiotti</h3>
+              <p title="Associate Professor at Department of Engineering “Enzo Ferrari” of University of Modena and Reggio Emilia">Associate Professor at Department of Engineering “Enzo Ferrari” of University of Modena and Reggio Emilia</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      </div>
+    </section>
+    <!-- Group photos. To add one: put a ~1800 px "-large" and a ~900 px "-thumb" JPEG in
+         files/images/group/web/ and copy an <li> below. Optional tile shapes:
+         gallery-feature (2x2), gallery-tall (1x2, for portrait photos), gallery-wide (2x1). -->
+    <section class="section section--soft gallery-section" id="photos">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Life at LAR</p>
+            <h2 class="section-title">Group photos</h2>
+          </div>
+        </div>
+        <ul class="gallery" data-gallery>
+          <li class="gallery-feature reveal">
+            <a class="gallery-item" href="/files/images/group/web/2025-07-lab-large.jpg" data-caption="At the lab · July 2025">
+              <img src="/files/images/group/web/2025-07-lab-thumb.jpg" alt="The LAR team in front of the lab building" width="900" height="675" loading="lazy" decoding="async">
+              <span class="gallery-caption"><strong>At the lab</strong><span>July 2025</span></span>
+            </a>
+          </li>
+          <li class="gallery-tall reveal">
+            <a class="gallery-item" href="/files/images/group/web/2026-07-aim-conference-large.jpg" data-caption="AIM 2026 conference · July 2026">
+              <img src="/files/images/group/web/2026-07-aim-conference-thumb.jpg" alt="LAR members at the AIM 2026 conference" width="675" height="900" loading="lazy" decoding="async">
+              <span class="gallery-caption"><strong>AIM 2026 conference</strong><span>July 2026</span></span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="gallery-item" href="/files/images/group/web/2025-06-bike-trip-large.jpg" data-caption="Bike trip · June 2025">
+              <img src="/files/images/group/web/2025-06-bike-trip-thumb.jpg" alt="The LAR team on a bike trip" width="900" height="675" loading="lazy" decoding="async">
+              <span class="gallery-caption"><strong>Bike trip</strong><span>June 2025</span></span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="gallery-item" href="/files/images/group/web/2024-12-christmas-large.jpg" data-caption="Christmas · December 2024">
+              <img src="/files/images/group/web/2024-12-christmas-thumb.jpg" alt="Group photo of the LAR team outside the lab at Christmas" width="900" height="675" loading="lazy" decoding="async">
+              <span class="gallery-caption"><strong>Christmas</strong><span>December 2024</span></span>
+            </a>
+          </li>
+          <li class="gallery-wide reveal">
+            <a class="gallery-item" href="/files/images/group/web/2025-06-lunch-large.jpg" data-caption="Lunch together · June 2025">
+              <img src="/files/images/group/web/2025-06-lunch-thumb.jpg" alt="LAR members having lunch outdoors" width="900" height="506" loading="lazy" decoding="async">
+              <span class="gallery-caption"><strong>Lunch together</strong><span>June 2025</span></span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="gallery-item" href="/files/images/group/web/2024-06-rafting-large.jpg" data-caption="Rafting · June 2024">
+              <img src="/files/images/group/web/2024-06-rafting-thumb.jpg" alt="LAR members rafting" width="900" height="600" loading="lazy" decoding="async">
+              <span class="gallery-caption"><strong>Rafting</strong><span>June 2024</span></span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="gallery-item" href="/files/images/group/web/2022-10-japan-large.jpg" data-caption="Japan · October 2022">
+              <img src="/files/images/group/web/2022-10-japan-thumb.jpg" alt="LAR members visiting a temple in Japan" width="900" height="675" loading="lazy" decoding="async">
+              <span class="gallery-caption"><strong>Japan</strong><span>October 2022</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same on every page) -->
+  <footer class="site-footer">
+    <div class="footer-skyline" aria-hidden="true"></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="/" aria-label="Laboratory of Automation and Robotics – home">
+          <img class="brand-logo" src="/files/images/logo/lar_logo_light.png" alt="" width="546" height="240">
+          <span class="brand-text">
+            <svg class="brand-lockup" viewBox="0 0 88 42" width="88" height="42" aria-hidden="true" focusable="false">
+              <text x="0" y="10.5" textLength="88" lengthAdjust="spacing">Laboratory of</text>
+              <text x="0" y="25" textLength="88" lengthAdjust="spacing">Automation</text>
+              <text x="0" y="39.5" textLength="88" lengthAdjust="spacing">and Robotics</text>
+            </svg>
+          </span>
+        </a>
+        <p>Part of the Department of Electrical, Electronic, and Information Engineering “Guglielmo Marconi” (DEI) at the Alma Mater Studiorum – Università di Bologna.</p>
+        <p class="footer-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Bologna, Italy</p>
+      </div>
+
+      <div class="footer-col">
+        <h2>Explore</h2>
+        <ul>
+            <li><a href="/research/">Research</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/people/">People</a></li>
+            <li><a href="/publications/">Publications</a></li>
+            <li><a href="/deformable_linear_objects/">Deformable Linear Objects</a></li>
+            <li><a href="/human_robot_collaboration/">Human–Robot Collaboration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Affiliations</h2>
+        <ul>
+          <li><a href="https://dei.unibo.it/en/index.html" target="_blank" rel="noopener">Department of Electrical, Electronic, and Information Engineering (DEI)</a></li>
+          <li><a href="https://www.unibo.it/en/homepage" target="_blank" rel="noopener">Alma Mater Studiorum – Università di Bologna</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Code &amp; data</h2>
+        <ul>
+          <li><a class="footer-icon-link" href="https://github.com/lar-unibo/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> github.com/lar-unibo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span data-current-year>2026</span> Laboratory of Automation and Robotics · Università di Bologna</span>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

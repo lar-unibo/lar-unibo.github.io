@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Topics | LAR @ UNIBO</title>
+  <meta name="description" content="The two main research directions of the Laboratory of Automation and Robotics, deformable objects and human–robot collaboration, and the other topics we work on.">
+  <link rel="canonical" href="https://lar-unibo.github.io/research/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LAR @ UNIBO">
+  <meta property="og:title" content="Research Topics">
+  <meta property="og:description" content="The two main research directions of the Laboratory of Automation and Robotics, deformable objects and human–robot collaboration, and the other topics we work on.">
+  <meta property="og:url" content="https://lar-unibo.github.io/research/">
+  <meta property="og:image" content="https://lar-unibo.github.io/files/images/logo/og_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#03192a">
+  <link rel="icon" type="image/png" href="/files/images/logo/favicon.png">
+  <link rel="apple-touch-icon" href="/files/images/logo/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css?v=2026-11-07-15">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="/assets/js/site.js?v=2026-11-07-11" defer></script>
+
+  <!-- Google Analytics (only on the live site, not on localhost) -->
+  <script>
+    if (location.hostname === 'lar-unibo.github.io') {
+      var ga = document.createElement('script');
+      ga.async = true;
+      ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-0HGDL6KQQ1';
+      document.head.appendChild(ga);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-0HGDL6KQQ1', { anonymize_ip: false });
+    }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite: use with <svg class="icon" aria-hidden="true"><use href="#i-NAME"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
+    <symbol id="i-paper" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-pdf" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 11v6M9.5 14.5 12 17l2.5-2.5"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="m10 8.5 5.5 3.5-5.5 3.5z"/></symbol>
+    <symbol id="i-dataset" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8v-13M4.5 12c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5a14.5 14.5 0 0 1 0 19M12 2.5a14.5 14.5 0 0 0 0 19"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-gripper" viewBox="0 0 24 24"><path d="M12 2.5V8M6.5 8h11M7.5 8v5.5l-2.5 4M16.5 8v5.5l2.5 4M5 17.5l1.5 3M19 17.5l-1.5 3"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2.5"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9.5 2.5V6M14.5 2.5V6M9.5 18v3.5M14.5 18v3.5M2.5 9.5H6M2.5 14.5H6M18 9.5h3.5M18 14.5h3.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20.5a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M21.5 20.5a6.5 6.5 0 0 0-3.7-5.9"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2.5 12h4l3-8 5 16 3-8h4"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2.5 4.5 13.5H11l-1 8 8.5-11H12z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10.5M19 21V10.5M9.5 21v-5.5h5V21M2.5 10.5 12 4.5l9.5 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.1 7-11.5a7 7 0 0 0-14 0c0 5.4 7 11.5 7 11.5z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header (same on every page) -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Laboratory of Automation and Robotics – home">
+        <img class="brand-logo brand-logo--on-light" src="/files/images/logo/lar_logo.png" alt="" width="546" height="240">
+        <img class="brand-logo brand-logo--on-dark" src="/files/images/logo/lar_logo_light.png" alt="" width="546" height="240">
+        <span class="brand-text">
+          <svg class="brand-lockup" viewBox="0 0 88 42" width="88" height="42" aria-hidden="true" focusable="false">
+            <text x="0" y="10.5" textLength="88" lengthAdjust="spacing">Laboratory of</text>
+            <text x="0" y="25" textLength="88" lengthAdjust="spacing">Automation</text>
+            <text x="0" y="39.5" textLength="88" lengthAdjust="spacing">and Robotics</text>
+          </svg>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/research/" class="is-active" aria-current="page">Research</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/people/">People</a></li>
+          <li><a href="/publications/">Publications</a></li>
+        </ul>
+        <a class="nav-github" href="https://github.com/lar-unibo/" target="_blank" rel="noopener" aria-label="LAR on GitHub">
+          <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <canvas class="cables" data-cables="5" data-calm aria-hidden="true"></canvas>
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container page-hero-inner">
+        <p class="eyebrow eyebrow--light">Research</p>
+        <h1>Research Topics</h1>
+        <p class="page-lead">The two main research directions of the Laboratory of Automation and Robotics, deformable objects and human–robot collaboration, and the other topics we work on.</p>
+      </div>
+    </section>
+
+    <!-- The two main research directions of the lab, then the other topics. -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Main research directions</p>
+            <h2 class="section-title">What we are working on</h2>
+          </div>
+        </div>
+
+        <article class="research-feature" id="dlo">
+          <div class="research-feature-media is-contain reveal">
+            <img src="/files/images/topics/dlo_shape_control_safety.png" width="1050" height="875" alt="Diagram of a safety filter for dual-arm manipulation of an elastic rod: conditions for shape control (equilibrium regularity, shape authority), physical safety limits (bending, twist, collision), and the filter correcting the robot commands with a rod model" loading="lazy" decoding="async">
+          </div>
+          <div class="research-feature-body reveal">
+            <span class="topic-index">01 · Main direction</span>
+            <h3>Robotic Perception and Manipulation of Deformable Linear Objects</h3>
+            <div class="prose">
+              <p>Deformable Linear Objects (DLOs) are a specific subset of Deformable Objects (DOs), i.e. objects that can change their shape when subjected to external forces. DLOs are characterized by a linear geometry and include examples such as wires, cables, strings, and ropes. Despite being common in both domestic and industrial environments, DLOs pose a significant challenge for robotic applications. Indeed, the manufacturing and assembly industries that work with wires and wiring harnesses still rely heavily on human labor. The main challenges that robots face when dealing with these objects are: (1) the lack of any specific shape or feature that distinguishes them from other objects; (2) the vast number of possible configurations they can assume; and (3) their highly nonlinear and complex dynamics, which are generally difficult to model and predict.</p>
+              <p>At LAR, we are actively researching approaches to effectively perceive DLOs using deep learning methods, while also developing smart strategies to enable the automatic generation of training datasets. For the robotic manipulation, our focus is on combining both model-based and learning-based approaches, with the aim of addressing some of their individual limitations.</p>
+              <p>Recent work extends this line to language-grounded perception, multi-view tracking, topology learning for the dual-arm manipulation of multiple cables, and complete robotic cells for connector assembly and wiring-harness manufacturing. We also reviewed the field in a survey and in a two-part tutorial on shape servoing of deformable objects.</p>
+            </div>
+            <ul class="subtopics" aria-label="Topics">
+              <li><a href="/deformable_linear_objects/#survey-and-tutorials">Survey &amp; tutorials</a></li>
+              <li><a href="/deformable_linear_objects/#vision-based-dataset-generation">Dataset generation</a></li>
+              <li><a href="/deformable_linear_objects/#2d-perception">2D perception</a></li>
+              <li><a href="/deformable_linear_objects/#3d-perception">3D perception</a></li>
+              <li><a href="/deformable_linear_objects/#manipulation">Manipulation</a></li>
+              <li><a href="/deformable_linear_objects/#assembly">Assembly &amp; industry</a></li>
+              <li><a href="/deformable_linear_objects/#cloth">Cloth</a></li>
+            </ul>
+            <h4 class="key-pubs-title">Key publications</h4>
+            <ul class="key-pubs">
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1177/02783649261432253" target="_blank" rel="noopener">Robotic perception and manipulation of deformable linear objects: A survey</a><span>The International Journal of Robotics Research, 2026</span></li>
+              <li><span class="pub-type pub-type--preprint">Preprint</span><a href="https://arxiv.org/abs/2610.40559" target="_blank" rel="noopener">A Tutorial on Shape Servoing of Deformable Objects-Part I: Fundamentals</a><span>arXiv:2610.40559, 2026</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/tmech.2026.3654272" target="_blank" rel="noopener">Vision and Tactile Sensing for DLO Manipulation and Pin Insertion in Robotic Connector Assembly</a><span>IEEE/ASME Transactions on Mechatronics, 2026</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/tase.2025.3562231" target="_blank" rel="noopener">GNN Topology Representation Learning for Deformable Multi-Linear Objects Dual-Arm Robotic Manipulation</a><span>IEEE Transactions on Automation Science and Engineering, 2025</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/tmech.2025.3562295" target="_blank" rel="noopener">Robotic Manipulation of Deformable Linear Objects via Multiview Model-Based Visual Tracking</a><span>IEEE/ASME Transactions on Mechatronics, 2025</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/lra.2024.3491428" target="_blank" rel="noopener">DLO Perceiver: Grounding Large Language Model for Deformable Linear Objects Perception</a><span>IEEE Robotics and Automation Letters, 2024</span></li>
+            </ul>
+            <div class="research-actions">
+              <a class="btn btn--primary" href="/deformable_linear_objects/">All results and papers <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+              <a class="btn btn--outline" href="/publications/?q=deformable">Related publications</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-feature research-feature--flip" id="hri">
+          <div class="research-feature-media is-contain reveal">
+            <img src="/files/images/topics/ubhand.png" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="research-feature-body reveal">
+            <span class="topic-index">02 · Main direction</span>
+            <h3>Shared Autonomy, Human–Robot Collaboration and Robotic Hands</h3>
+            <div class="prose">
+              <p>Robots that work side by side with people must understand their intentions and share control with them in a natural way. At LAR, we develop interfaces based on surface electromyography (sEMG) that decode muscle activity to control robotic hands and assistive devices, with regression approaches that need little or no labelled data.</p>
+              <p>We study shared-autonomy schemes in which the robot assists the user, for instance by regulating the grip strength of a myocontrolled robotic hand or by supporting the manipulation of deformable objects, and we use sEMG-based estimates of muscle co-contraction and stiffness to make kinesthetic teaching and teleoperated programming by demonstration more intuitive. This line builds on the lab’s long experience in mapping human hand motions to robotic hands and in the design and control of anthropomorphic robot hands, such as the UB Hand.</p>
+            </div>
+            <ul class="subtopics" aria-label="Topics">
+              <li><a href="/human_robot_collaboration/#myoelectric-control">sEMG hand control</a></li>
+              <li><a href="/human_robot_collaboration/#shared-autonomy">Shared autonomy</a></li>
+              <li><a href="/human_robot_collaboration/#robot-teaching">Robot teaching</a></li>
+              <li><a href="/human_robot_collaboration/#robotic-hands">Hand motion mapping</a></li>
+              <li><a href="/human_robot_collaboration/#assistive-devices">Assistive devices</a></li>
+            </ul>
+            <h4 class="key-pubs-title">Key publications</h4>
+            <ul class="key-pubs">
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/tro.2026.3696049" target="_blank" rel="noopener">Hidden Markov Model-Based Shared Autonomy for Grip Strength Regulation in sEMG Driven Robot Hand Control</a><span>IEEE Transactions on Robotics, 2026</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/tmech.2025.3603402" target="_blank" rel="noopener">Programming Robot Interaction Behavior During Kinesthetic Teaching Exploiting sEMG-Based Interfacing and Vibrotactile Feedback</a><span>IEEE/ASME Transactions on Mechatronics, 2025</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/lra.2023.3329764" target="_blank" rel="noopener">Self-Supervised Regression of sEMG Signals Combining Non-Negative Matrix Factorization With Deep Neural Networks for Robot Hand Multiple Grasping Motion Control</a><span>IEEE Robotics and Automation Letters, 2023</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/tro.2023.3258669" target="_blank" rel="noopener">Robot Programming by Demonstration: Trajectory Learning Enhanced by sEMG-Based User Hand Stiffness Estimation</a><span>IEEE Transactions on Robotics, 2023</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/tro.2022.3205510" target="_blank" rel="noopener">Human to Robot Hand Motion Mapping Methods: Review and Classification</a><span>IEEE Transactions on Robotics, 2022</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/lra.2020.2988152" target="_blank" rel="noopener">A sEMG-Driven Soft ExoSuit Based on Twisted String Actuators for Elbow Assistive Applications</a><span>IEEE Robotics and Automation Letters, 2020</span></li>
+            </ul>
+            <div class="research-actions">
+              <a class="btn btn--primary" href="/human_robot_collaboration/">All results and papers <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+              <a class="btn btn--outline" href="/publications/?q=semg">Related publications</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Other research topics</p>
+            <h2 class="section-title">Also in the lab</h2>
+          </div>
+        </div>
+        <article class="research-feature" id="liquids">
+          <div class="research-feature-media is-contain reveal">
+            <img src="/files/images/topics/robotwaiter.png" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="research-feature-body reveal">
+            <span class="topic-index">03</span>
+            <h3>Robotic Manipulation of Liquids in Open Containers</h3>
+            <div class="prose">
+              <p>Sloshing is the oscillatory motion of a liquid inside a moving, partially filled container. When liquid-filled containers are moved between stations in processing or packaging lines, or carried on a robotic tray without being grasped, sloshing has to be limited to avoid spillage, product loss and slow, overly cautious motions.</p>
+              <p>We develop computationally cheap models that estimate the sloshing height during general motions, such as 3D translations combined with a rotation about the vertical axis (SCARA motions) or about a horizontal axis (tilting), based on equivalent mass-spring-damper and pendulum models that need no experimental tuning and no external sensors. Building on these models, we plan time-optimal anti-sloshing trajectories for several containers transported at once, compute closed-form container tilting that compensates sloshing for motions with a prescribed yaw, and use model predictive control for non-prehensile transport that guarantees both contact stability and a bound on the wave height. To validate the models, we measure the maximum sloshing height with RGB action cameras; the measurement tools and the experimental data sets are publicly released.</p>
+            </div>
+            <ul class="subtopics" aria-label="Topics">
+              <li>Sloshing-height estimation</li>
+              <li>Anti-sloshing trajectory planning</li>
+              <li>Tilting compensation</li>
+              <li>Non-prehensile transport (MPC)</li>
+              <li>Vision-based sloshing measurement</li>
+            </ul>
+            <h4 class="key-pubs-title">Key publications</h4>
+            <ul class="key-pubs">
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/rap.2026.3750081" target="_blank" rel="noopener">Sloshing-Height Detection Using RGB Action Cameras</a><span>IEEE Robotics and Automation Practice, 2026</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1007/s11071-026-12443-6" target="_blank" rel="noopener">Sloshing-height estimation for liquid-filled containers under four-dimensional motions including spatial translation and rotation about a fixed direction: modelling and experimental validation</a><span>Nonlinear Dynamics, 2026</span></li>
+              <li><span class="pub-type pub-type--conference">Conference</span><a href="https://doi.org/10.1109/aim65483.2026.11658331" target="_blank" rel="noopener">Model Predictive Control for Non-Prehensile Robotic Manipulation of Liquid Containers with Sloshing Boundedness Guarantees</a><span>IEEE/ASME AIM, 2026</span></li>
+              <li><span class="pub-type pub-type--conference">Conference</span><a href="https://doi.org/10.1109/aim65483.2026.11658355" target="_blank" rel="noopener">Closed-Form Tilting Compensation for Slosh-Free Robotic Trajectories with Prescribed Yaw</a><span>IEEE/ASME AIM, 2026</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/lra.2025.3643281" target="_blank" rel="noopener">Time-Optimal Anti-Sloshing Trajectory Planning for Multiple Liquid-Filled Containers Subject to SCARA Motion</a><span>IEEE Robotics and Automation Letters, 2025</span></li>
+            </ul>
+            <div class="research-actions">
+              <a class="btn btn--primary" href="/publications/?q=slosh">Related publications <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="research-feature research-feature--flip" id="collision-avoidance">
+          <div class="research-feature-media is-contain reveal">
+            <img src="/files/images/topics/collision_avoidance_sdf.jpg" alt="A Franka arm moves away from an approaching hand; next to it, the robot&#x27;s distance-field model, the point cloud of the hand and the repulsive directions" loading="lazy" decoding="async">
+          </div>
+          <div class="research-feature-body reveal">
+            <span class="topic-index">04</span>
+            <h3>Real-Time Collision Avoidance with Distance Fields</h3>
+            <div class="prose">
+              <p>Robots that share their workspace with people and moving objects must react to obstacles within milliseconds, without abandoning the task they are executing. We embed distance fields directly into task-priority control: avoidance of obstacles and self-collisions sits in the same hierarchy as end-effector tracking, joint limits and singularity avoidance, and is activated smoothly only when it is needed.</p>
+              <p>The robot links are modelled as signed distance fields built from Bernstein polynomials, which give a continuous geometry and closed-form gradients for the repulsive actions; low-rank tensor decompositions make their batched evaluation on the GPU fast and memory-efficient. The environment is sensed with depth cameras and laser scanners, as point clouds or as a GPU voxel map with its Euclidean distance transform. The framework runs on fixed-base and mobile manipulators; on mobile manipulators, the redundancy of the holonomic base is also used to steer repetitive trajectories away from singular configurations.</p>
+            </div>
+            <ul class="subtopics" aria-label="Topics">
+              <li>Signed distance fields</li>
+              <li>Task-priority control</li>
+              <li>GPU acceleration</li>
+              <li>Self-collision avoidance</li>
+              <li>Mobile manipulators</li>
+              <li>Singularity avoidance</li>
+            </ul>
+            <h4 class="key-pubs-title">Publications</h4>
+            <ul class="key-pubs">
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1016/j.robot.2026.105394" target="_blank" rel="noopener">Real-time collision avoidance with robot distance fields in a task-priority framework</a><span>Robotics and Autonomous Systems, 2026</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1016/j.robot.2026.105717" target="_blank" rel="noopener">Fast GPU evaluation of differentiable Signed Distance Fields for robotics via tensor decompositions</a><span>Robotics and Autonomous Systems, 2026</span></li>
+              <li><span class="pub-type pub-type--conference">Conference</span><a href="https://doi.org/10.1109/aim64088.2025.11175634" target="_blank" rel="noopener">Singularity Avoidance for 6-DOF Robots Using Holonomic Base Through Task-Priority Approach</a><span>IEEE/ASME AIM, 2025</span></li>
+              <li><span class="pub-type pub-type--preprint">Preprint</span><a href="https://arxiv.org/abs/2407.02363" target="_blank" rel="noopener">Real Time Collision Avoidance with GPU-Computed Distance Maps</a><span>arXiv:2407.02363, 2024</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="research-feature" id="mechatronic-design">
+          <div class="research-feature-media is-contain reveal">
+            <img src="/files/images/topics/compliant_wrist.jpg" alt="The 3D-printed monolithic compliant wrist in four poses of flexion and deviation" loading="lazy" decoding="async">
+          </div>
+          <div class="research-feature-body reveal">
+            <span class="topic-index">05</span>
+            <h3>Mechatronic Design: Compliant Wrists, Grippers, Actuators and Tactile Sensors</h3>
+            <div class="prose">
+              <p>Many of the devices we use are designed and built in the lab. A recent line concerns cable-driven compliant wrists for upper-limb prostheses and robots: two degrees of freedom are obtained with cross-axis flexural pivots, printed as a single monolithic part that is lightweight, frictionless and free from backlash, and that matches the range of motion of the human wrist (±80° of flexion/extension, ±40° of ulnar/radial deviation). Fast virtual prototypes based on finite element analysis let us tune the controller before the physical device is built.</p>
+              <p>Other designs include a tendon-driven three-fingered gripper for autonomous underwater vehicles, an additively manufactured flexible endoscope driven by antagonistic twisted string actuators, and tactile sensors: a low-cost soft skin with an embedded IMU that localizes contacts on large surfaces, and a physics-based calibration that turns an optoelectronic tactile array into a force sensor for grasping cables.</p>
+            </div>
+            <ul class="subtopics" aria-label="Topics">
+              <li>Compliant mechanisms</li>
+              <li>Prosthetic wrists</li>
+              <li>Virtual prototyping</li>
+              <li>Tendon-driven grippers</li>
+              <li>Twisted string actuation</li>
+              <li>Tactile sensing</li>
+            </ul>
+            <h4 class="key-pubs-title">Publications</h4>
+            <ul class="key-pubs">
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/tmech.2025.3593293" target="_blank" rel="noopener">Virtual and Physical Prototyping of a Cable-Driven Compliant Robotic Wrist</a><span>IEEE/ASME Transactions on Mechatronics, 2025</span></li>
+              <li><span class="pub-type pub-type--journal">Journal</span><a href="https://doi.org/10.1109/tmech.2023.3345215" target="_blank" rel="noopener">A Monolithic Cable-Driven Compliant Wrist for Prosthetic Arms</a><span>IEEE/ASME Transactions on Mechatronics, 2024</span></li>
+              <li><span class="pub-type pub-type--conference">Conference</span><a href="https://doi.org/10.1109/aim65483.2026.11658011" target="_blank" rel="noopener">Hertz-Inspired Cylinder–Plane Model for Force–Voltage Mapping in Tactile Sensing</a><span>IEEE/ASME AIM, 2026</span></li>
+              <li><span class="pub-type pub-type--conference">Conference</span><a href="https://doi.org/10.1109/aim55361.2024.10637078" target="_blank" rel="noopener">Additively Manufactured Flexible Endoscope Driven By Guided Antagonistic Twisted String Actuation: A Pilot Experimental Evaluation</a><span>IEEE/ASME AIM, 2024</span></li>
+              <li><span class="pub-type pub-type--conference">Conference</span><a href="https://doi.org/10.1109/mesa61532.2024.10704878" target="_blank" rel="noopener">Virtual Prototyping of a Cable-Driven Compliant Robotic Wrist</a><span>IEEE/ASME MESA, 2024</span></li>
+              <li><span class="pub-type pub-type--conference">Conference</span><a href="https://doi.org/10.1115/smasis2022-92010" target="_blank" rel="noopener">Mechatronic Design and Physical Prototyping of a Three-Fingered Gripper for Underwater Manipulation</a><span>ASME SMASIS, 2022</span></li>
+              <li><span class="pub-type pub-type--conference">Conference</span><a href="https://doi.org/10.1109/icps48405.2020.9274737" target="_blank" rel="noopener">A Low Cost Tactile Sensor for Large Surfaces Based on Deformable Skin with Embedded IMU</a><span>IEEE ICPS, 2020</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same on every page) -->
+  <footer class="site-footer">
+    <div class="footer-skyline" aria-hidden="true"></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="/" aria-label="Laboratory of Automation and Robotics – home">
+          <img class="brand-logo" src="/files/images/logo/lar_logo_light.png" alt="" width="546" height="240">
+          <span class="brand-text">
+            <svg class="brand-lockup" viewBox="0 0 88 42" width="88" height="42" aria-hidden="true" focusable="false">
+              <text x="0" y="10.5" textLength="88" lengthAdjust="spacing">Laboratory of</text>
+              <text x="0" y="25" textLength="88" lengthAdjust="spacing">Automation</text>
+              <text x="0" y="39.5" textLength="88" lengthAdjust="spacing">and Robotics</text>
+            </svg>
+          </span>
+        </a>
+        <p>Part of the Department of Electrical, Electronic, and Information Engineering “Guglielmo Marconi” (DEI) at the Alma Mater Studiorum – Università di Bologna.</p>
+        <p class="footer-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Bologna, Italy</p>
+      </div>
+
+      <div class="footer-col">
+        <h2>Explore</h2>
+        <ul>
+            <li><a href="/research/">Research</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/people/">People</a></li>
+            <li><a href="/publications/">Publications</a></li>
+            <li><a href="/deformable_linear_objects/">Deformable Linear Objects</a></li>
+            <li><a href="/human_robot_collaboration/">Human–Robot Collaboration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Affiliations</h2>
+        <ul>
+          <li><a href="https://dei.unibo.it/en/index.html" target="_blank" rel="noopener">Department of Electrical, Electronic, and Information Engineering (DEI)</a></li>
+          <li><a href="https://www.unibo.it/en/homepage" target="_blank" rel="noopener">Alma Mater Studiorum – Università di Bologna</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Code &amp; data</h2>
+        <ul>
+          <li><a class="footer-icon-link" href="https://github.com/lar-unibo/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> github.com/lar-unibo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span data-current-year>2026</span> Laboratory of Automation and Robotics · Università di Bologna</span>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

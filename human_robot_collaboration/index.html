@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Human–Robot Collaboration | LAR @ UNIBO</title>
+  <meta name="description" content="Robots that work with people must understand what they intend and share control with them in a natural way. We decode muscle activity to control robotic hands and to teach collaborative robots, let the robot regulate grip strength in shared autonomy, map human hand motions onto anthropomorphic hands, and build wearable devices that assist the human arm.">
+  <link rel="canonical" href="https://lar-unibo.github.io/human_robot_collaboration/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LAR @ UNIBO">
+  <meta property="og:title" content="Human–Robot Collaboration">
+  <meta property="og:description" content="Robots that work with people must understand what they intend and share control with them in a natural way. We decode muscle activity to control robotic hands and to teach collaborative robots, let the robot regulate grip strength in shared autonomy, map human hand motions onto anthropomorphic hands, and build wearable devices that assist the human arm.">
+  <meta property="og:url" content="https://lar-unibo.github.io/human_robot_collaboration/">
+  <meta property="og:image" content="https://lar-unibo.github.io/files/images/logo/og_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#03192a">
+  <link rel="icon" type="image/png" href="/files/images/logo/favicon.png">
+  <link rel="apple-touch-icon" href="/files/images/logo/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css?v=2026-11-07-15">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="/assets/js/site.js?v=2026-11-07-11" defer></script>
+
+  <!-- Google Analytics (only on the live site, not on localhost) -->
+  <script>
+    if (location.hostname === 'lar-unibo.github.io') {
+      var ga = document.createElement('script');
+      ga.async = true;
+      ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-0HGDL6KQQ1';
+      document.head.appendChild(ga);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-0HGDL6KQQ1', { anonymize_ip: false });
+    }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite: use with <svg class="icon" aria-hidden="true"><use href="#i-NAME"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
+    <symbol id="i-paper" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-pdf" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 11v6M9.5 14.5 12 17l2.5-2.5"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="m10 8.5 5.5 3.5-5.5 3.5z"/></symbol>
+    <symbol id="i-dataset" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8v-13M4.5 12c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5a14.5 14.5 0 0 1 0 19M12 2.5a14.5 14.5 0 0 0 0 19"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-gripper" viewBox="0 0 24 24"><path d="M12 2.5V8M6.5 8h11M7.5 8v5.5l-2.5 4M16.5 8v5.5l2.5 4M5 17.5l1.5 3M19 17.5l-1.5 3"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2.5"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9.5 2.5V6M14.5 2.5V6M9.5 18v3.5M14.5 18v3.5M2.5 9.5H6M2.5 14.5H6M18 9.5h3.5M18 14.5h3.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20.5a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M21.5 20.5a6.5 6.5 0 0 0-3.7-5.9"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2.5 12h4l3-8 5 16 3-8h4"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2.5 4.5 13.5H11l-1 8 8.5-11H12z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10.5M19 21V10.5M9.5 21v-5.5h5V21M2.5 10.5 12 4.5l9.5 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.1 7-11.5a7 7 0 0 0-14 0c0 5.4 7 11.5 7 11.5z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header (same on every page) -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Laboratory of Automation and Robotics – home">
+        <img class="brand-logo brand-logo--on-light" src="/files/images/logo/lar_logo.png" alt="" width="546" height="240">
+        <img class="brand-logo brand-logo--on-dark" src="/files/images/logo/lar_logo_light.png" alt="" width="546" height="240">
+        <span class="brand-text">
+          <svg class="brand-lockup" viewBox="0 0 88 42" width="88" height="42" aria-hidden="true" focusable="false">
+            <text x="0" y="10.5" textLength="88" lengthAdjust="spacing">Laboratory of</text>
+            <text x="0" y="25" textLength="88" lengthAdjust="spacing">Automation</text>
+            <text x="0" y="39.5" textLength="88" lengthAdjust="spacing">and Robotics</text>
+          </svg>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/research/" class="is-active" aria-current="page">Research</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/people/">People</a></li>
+          <li><a href="/publications/">Publications</a></li>
+        </ul>
+        <a class="nav-github" href="https://github.com/lar-unibo/" target="_blank" rel="noopener" aria-label="LAR on GitHub">
+          <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <canvas class="cables" data-cables="5" data-calm aria-hidden="true"></canvas>
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container page-hero-inner">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/research/">Research</a><span aria-hidden="true">/</span><span aria-current="page">Human–Robot Collaboration</span></nav>
+        <h1>Shared Autonomy, Human–Robot Collaboration and Robotic Hands</h1>
+        <p class="page-lead">Robots that work with people must understand what they intend and share control with them in a natural way. We decode muscle activity to control robotic hands and to teach collaborative robots, let the robot regulate grip strength in shared autonomy, map human hand motions onto anthropomorphic hands, and build wearable devices that assist the human arm.</p>
+      </div>
+    </section>
+
+    <nav class="subnav" aria-label="Page sections" data-subnav>
+      <div class="container subnav-inner">
+        <a href="#myoelectric-control"><span class="n">01</span>sEMG hand control</a>
+        <a href="#shared-autonomy"><span class="n">02</span>Shared autonomy</a>
+        <a href="#robot-teaching"><span class="n">03</span>Robot teaching</a>
+        <a href="#robotic-hands"><span class="n">04</span>Hand motion mapping</a>
+        <a href="#assistive-devices"><span class="n">05</span>Assistive devices</a>
+      </div>
+    </nav>
+
+    <section class="section dlo-section" id="myoelectric-control">
+      <div class="container">
+        <div class="dlo-section-head reveal">
+          <span class="section-num">01</span>
+          <h2>Myoelectric Control of Robotic Hands</h2>
+          <span class="count">4 papers</span>
+        </div>
+        <div class="section-intro reveal">
+          <img class="is-natural" src="/files/images/topics/hri_semg_hand.jpg" alt="An AR10 robot hand on a 3D-printed support worn on the forearm, controlled through a gForcePro sEMG armband" loading="lazy" decoding="async">
+          <p>Surface electromyography (sEMG) measured on the forearm reveals how a person intends to grasp. We regress these signals into continuous commands for multi-fingered robotic hands while avoiding the tedious instant-by-instant labelling that supervised learning requires: non-negative matrix factorization combined with deep neural networks in a self-supervised scheme, minimally supervised networks trained with a soft-DTW loss, weakly supervised regression, and temporal convolutional networks that run on a low-power microcontroller.</p>
+        </div>
+        <h3 class="paper-list-title">Key papers</h3>
+        <ul class="paper-list paper-list--key">
+          <li class="paper-row paper-row--key reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1109/lra.2023.3329764" target="_blank" rel="noopener">Self-Supervised Regression of sEMG Signals Combining Non-Negative Matrix Factorization With Deep Neural Networks for Robot Hand Multiple Grasping Motion Control</a></h3>
+              <p class="paper-row-venue">IEEE Robotics and Automation Letters, 2023</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/lra.2023.3329764" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+                <a class="chip-link" href="/files/publications/NN_NMF_RAL.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pdf"/></svg><span>PDF</span></a>
+                <a class="chip-link" href="https://github.com/lar-unibo/self-supervised-regression-emg" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span>Code</span></a>
+            </div>
+          </li>
+          <li class="paper-row paper-row--key reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1109/lra.2022.3193247" target="_blank" rel="noopener">sEMG-Based Minimally Supervised Regression Using Soft-DTW Neural Networks for Robot Hand Grasping Control</a></h3>
+              <p class="paper-row-venue">IEEE Robotics and Automation Letters, 2022</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/lra.2022.3193247" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+        </ul>
+        <h3 class="paper-list-title">More papers</h3>
+        <ul class="paper-list">
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+              <h3><a href="https://doi.org/10.1016/j.ifacol.2025.10.197" target="_blank" rel="noopener">Comparison Of Weakly Supervised Regression Of sEMG Signals With State-Of-the-Art Unsupervised Methods For Robot Hand Control: A Pilot Study</a></h3>
+              <p class="paper-row-venue">IFAC-PapersOnLine, 2025</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1016/j.ifacol.2025.10.197" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+              <h3><a href="https://doi.org/10.1109/coins51742.2021.9524188" target="_blank" rel="noopener">sEMG-based Regression of Hand Kinematics with Temporal Convolutional Networks on a Low-Power Edge Microcontroller</a></h3>
+              <p class="paper-row-venue">2021 IEEE International Conference on Omni-Layer Intelligent Systems (COINS), 2021</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/coins51742.2021.9524188" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section dlo-section section--soft" id="shared-autonomy">
+      <div class="container">
+        <div class="dlo-section-head reveal">
+          <span class="section-num">02</span>
+          <h2>Shared Autonomy and Grip-Strength Regulation</h2>
+          <span class="count">5 papers</span>
+        </div>
+        <div class="section-intro reveal">
+          <img src="/files/images/topics/hri_shared_autonomy.jpg" alt="A user wearing an sEMG armband controls a robotic hand with tactile sensors that grasps an object" loading="lazy" decoding="async">
+          <p>Holding an object firmly but gently is hard when the command is a noisy muscle signal and the user cannot feel the contact. In our shared-autonomy schemes the robot takes over part of the control: tactile sensors on the fingers close the force loop, vibrotactile feedback tells the user how strongly the hand is gripping, and hidden Markov models applied to tactile data split the grasp into phases that set how much autonomy the robot hand takes. Fuzzy force controllers are tuned to each user's preferences. The same idea supports teleoperated cable manipulation with visual aid, and we study EEG error-related potentials as a feedback channel from the user to the robot.</p>
+        </div>
+        <h3 class="paper-list-title">Key papers</h3>
+        <ul class="paper-list paper-list--key">
+          <li class="paper-row paper-row--key reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1109/tro.2026.3696049" target="_blank" rel="noopener">Hidden Markov Model-Based Shared Autonomy for Grip Strength Regulation in sEMG Driven Robot Hand Control</a></h3>
+              <p class="paper-row-venue">IEEE Transactions on Robotics, 2026</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/tro.2026.3696049" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+        </ul>
+        <h3 class="paper-list-title">More papers</h3>
+        <ul class="paper-list">
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+              <h3><a href="https://doi.org/10.1109/etfa65518.2025.11205666" target="_blank" rel="noopener">User-Tailored Fuzzy-Based Grasp Strength Regulation in Myocontrolled Robotic Hands</a></h3>
+              <p class="paper-row-venue">2025 IEEE 30th International Conference on Emerging Technologies and Factory Automation (ETFA), 2025</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/etfa65518.2025.11205666" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+              <h3><a href="https://doi.org/10.1109/icorr.2019.8779476" target="_blank" rel="noopener">A Control Architecture for Grasp Strength Regulation in Myocontrolled Robotic Hands Using Vibrotactile Feedback: Preliminary Results</a></h3>
+              <p class="paper-row-venue">2019 IEEE 16th International Conference on Rehabilitation Robotics (ICORR), 2019</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/icorr.2019.8779476" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+              <h3><a href="https://doi.org/10.1109/aim46323.2023.10196145" target="_blank" rel="noopener">A Vision-based Shared Autonomy Framework for Deformable Linear Objects Manipulation</a></h3>
+              <p class="paper-row-venue">2023 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), 2023</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/aim46323.2023.10196145" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+              <h3><a href="https://doi.org/10.1109/ro-man60168.2024.10731468" target="_blank" rel="noopener">Challenges in Detecting and Analyzing EEG Error-Related Potentials: Lessons from a Case Study in HRI</a></h3>
+              <p class="paper-row-venue">2024 33rd IEEE International Conference on Robot and Human Interactive Communication (ROMAN), 2024</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/ro-man60168.2024.10731468" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section dlo-section" id="robot-teaching">
+      <div class="container">
+        <div class="dlo-section-head reveal">
+          <span class="section-num">03</span>
+          <h2>Robot Teaching with Neuromuscular Interfaces</h2>
+          <span class="count">5 papers</span>
+        </div>
+        <div class="section-intro reveal">
+          <img src="/files/images/topics/hri_kinesthetic_teaching.jpg" alt="An operator wearing sEMG sensors guides a collaborative robot along a 3D-printed track during kinesthetic teaching" loading="lazy" decoding="async">
+          <p>Kinesthetic teaching lets an operator program a collaborative robot by guiding it by hand, but it records only the path. We add a second channel: a wearable sEMG interface estimates how much the operator stiffens the hand (muscle co-contraction) without interfering with voluntary movements, and vibrotactile feedback makes this level perceivable. Stiffening the hand can request a more accurate trajectory, learned through constrained smoothing B-splines, or set the compliance of the robot point by point, in both kinesthetic and teleoperated programming by demonstration.</p>
+        </div>
+        <h3 class="paper-list-title">Key papers</h3>
+        <ul class="paper-list paper-list--key">
+          <li class="paper-row paper-row--key reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1109/tro.2023.3258669" target="_blank" rel="noopener">Robot Programming by Demonstration: Trajectory Learning Enhanced by sEMG-Based User Hand Stiffness Estimation</a></h3>
+              <p class="paper-row-venue">IEEE Transactions on Robotics, 2023</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/tro.2023.3258669" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row paper-row--key reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1109/tmech.2025.3603402" target="_blank" rel="noopener">Programming Robot Interaction Behavior During Kinesthetic Teaching Exploiting sEMG-Based Interfacing and Vibrotactile Feedback</a></h3>
+              <p class="paper-row-venue">IEEE/ASME Transactions on Mechatronics, 2025</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/tmech.2025.3603402" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row paper-row--key reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1109/toh.2024.3484373" target="_blank" rel="noopener">Neuromuscular Interfacing for Advancing Kinesthetic and Teleoperated Programming by Demonstration of Collaborative Robots</a></h3>
+              <p class="paper-row-venue">IEEE Transactions on Haptics, 2024</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/toh.2024.3484373" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+        </ul>
+        <h3 class="paper-list-title">More papers</h3>
+        <ul class="paper-list">
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1109/lra.2021.3092269" target="_blank" rel="noopener">Combining Unsupervised Muscle Co-Contraction Estimation With Bio-Feedback Allows Augmented Kinesthetic Teaching</a></h3>
+              <p class="paper-row-venue">IEEE Robotics and Automation Letters, 2021</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/lra.2021.3092269" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+              <h3><a href="https://doi.org/10.1016/j.ifacol.2023.01.125" target="_blank" rel="noopener">Experimental Evaluation Of Intuitive Programming Of Robot Interaction Behaviour During Kinesthetic Teaching Using sEMG And Cutaneous Feedback</a></h3>
+              <p class="paper-row-venue">IFAC-PapersOnLine, 2022</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1016/j.ifacol.2023.01.125" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section dlo-section section--soft" id="robotic-hands">
+      <div class="container">
+        <div class="dlo-section-head reveal">
+          <span class="section-num">04</span>
+          <h2>Human-to-Robot Hand Mapping and Anthropomorphic Hands</h2>
+          <span class="count">6 papers</span>
+        </div>
+        <div class="section-intro reveal">
+          <img src="/files/images/topics/hri_hand_mapping.jpg" alt="An operator wearing a data glove teleoperates an anthropomorphic robotic hand holding a cylinder" loading="lazy" decoding="async">
+          <p>To teleoperate an anthropomorphic robotic hand, the motion of the operator's hand must be mapped onto a hand with different kinematics. We reviewed and classified the mapping methods proposed in the literature, and developed hybrid joint–Cartesian mappings that exploit in-hand spatial information to preserve both the finger shapes and the fingertip positions. This builds on the lab's experience with anthropomorphic hands, from the UB Hand to synergy-based control with fingertip force sensors and a compliant, low-cost prosthetic hand.</p>
+        </div>
+        <h3 class="paper-list-title">Key papers</h3>
+        <ul class="paper-list paper-list--key">
+          <li class="paper-row paper-row--key reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1109/tro.2022.3205510" target="_blank" rel="noopener">Human to Robot Hand Motion Mapping Methods: Review and Classification</a></h3>
+              <p class="paper-row-venue">IEEE Transactions on Robotics, 2022</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/tro.2022.3205510" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row paper-row--key reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1109/lra.2021.3078658" target="_blank" rel="noopener">Exploiting In-Hand Knowledge in Hybrid Joint-Cartesian Mapping for Anthropomorphic Robotic Hands</a></h3>
+              <p class="paper-row-venue">IEEE Robotics and Automation Letters, 2021</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/lra.2021.3078658" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+        </ul>
+        <h3 class="paper-list-title">More papers</h3>
+        <ul class="paper-list">
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.3389/frobt.2022.878364" target="_blank" rel="noopener">Simulative Evaluation of a Joint-Cartesian Hybrid Motion Mapping for Robot Hands Based on Spatial In-Hand Information</a></h3>
+              <p class="paper-row-venue">Frontiers in Robotics and AI, 2022</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.3389/frobt.2022.878364" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+              <h3><a href="https://doi.org/10.1016/j.ifacol.2020.12.2726" target="_blank" rel="noopener">Combined Joint-Cartesian Mapping for Simultaneous Shape and Precision Teleoperation of Anthropomorphic Robotic Hands</a></h3>
+              <p class="paper-row-venue">IFAC-PapersOnLine, 2020</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1016/j.ifacol.2020.12.2726" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+              <h3><a href="https://doi.org/10.1016/j.ifacol.2019.11.698" target="_blank" rel="noopener">Synergy-Based Control of Anthropomorphic Robotic Hands with Contact Force Sensors</a></h3>
+              <p class="paper-row-venue">IFAC-PapersOnLine, 2019</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1016/j.ifacol.2019.11.698" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+              <h3><a href="https://doi.org/10.1115/smasis2023-110461" target="_blank" rel="noopener">Conceptual Design and Virtual Prototyping of a Compliant, Low-Cost Prosthetic Hand</a></h3>
+              <p class="paper-row-venue">ASME 2023 Conference on Smart Materials, Adaptive Structures and Intelligent Systems, 2023</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1115/smasis2023-110461" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section dlo-section" id="assistive-devices">
+      <div class="container">
+        <div class="dlo-section-head reveal">
+          <span class="section-num">05</span>
+          <h2>Assistive Wearable Devices and Safe Physical Interaction</h2>
+          <span class="count">5 papers</span>
+        </div>
+        <div class="section-intro reveal">
+          <img src="/files/images/topics/hri_vsa_elbow.jpg" alt="Render of an anthropomorphic elbow joint driven by a variable-stiffness actuator" loading="lazy" decoding="async">
+          <p>Muscle signals also drive devices that physically support the human body. We developed a lightweight soft exosuit actuated by twisted string actuators that assists the elbow in single- and dual-arm tasks, and human-in-the-loop controllers that let an assistive robot either compensate muscular effort or generate it for strength training. For safe physical interaction we designed variable-stiffness actuators, including an anthropomorphic elbow joint, and a twisted-string haptic interface for teleoperation with force feedback.</p>
+        </div>
+        <h3 class="paper-list-title">Key papers</h3>
+        <ul class="paper-list paper-list--key">
+          <li class="paper-row paper-row--key reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1109/lra.2020.2988152" target="_blank" rel="noopener">A sEMG-Driven Soft ExoSuit Based on Twisted String Actuators for Elbow Assistive Applications</a></h3>
+              <p class="paper-row-venue">IEEE Robotics and Automation Letters, 2020</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/lra.2020.2988152" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row paper-row--key reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1109/lra.2020.3010741" target="_blank" rel="noopener">sEMG-Based Human-in-the-Loop Control of Elbow Assistive Robots for Physical Tasks and Muscle Strength Training</a></h3>
+              <p class="paper-row-venue">IEEE Robotics and Automation Letters, 2020</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/lra.2020.3010741" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+        </ul>
+        <h3 class="paper-list-title">More papers</h3>
+        <ul class="paper-list">
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1007/s00170-022-09886-7" target="_blank" rel="noopener">Design, modeling, and control of a variable stiffness elbow joint</a></h3>
+              <p class="paper-row-venue">The International Journal of Advanced Manufacturing Technology, 2022</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1007/s00170-022-09886-7" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--journal">Journal</span></div>
+              <h3><a href="https://doi.org/10.1016/j.rcim.2019.101886" target="_blank" rel="noopener">Virtual and physical prototyping of a beam-based variable stiffness actuator for safe human-machine interaction</a></h3>
+              <p class="paper-row-venue">Robotics and Computer-Integrated Manufacturing, 2020</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1016/j.rcim.2019.101886" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+          <li class="paper-row reveal">
+            <div class="paper-row-main">
+              <div class="paper-meta"><span class="pub-type pub-type--conference">Conference</span></div>
+              <h3><a href="https://doi.org/10.1109/icar53236.2021.9659420" target="_blank" rel="noopener">Towards a Twisted String Actuated Haptic Device: Experimental Testing of a 2-D Virtual Environment and Teleoperation Interface</a></h3>
+              <p class="paper-row-venue">2021 20th International Conference on Advanced Robotics (ICAR), 2021</p>
+            </div>
+            <div class="work-links">
+                <a class="chip-link" href="https://doi.org/10.1109/icar53236.2021.9659420" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-paper"/></svg><span>Paper</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (same on every page) -->
+  <footer class="site-footer">
+    <div class="footer-skyline" aria-hidden="true"></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="/" aria-label="Laboratory of Automation and Robotics – home">
+          <img class="brand-logo" src="/files/images/logo/lar_logo_light.png" alt="" width="546" height="240">
+          <span class="brand-text">
+            <svg class="brand-lockup" viewBox="0 0 88 42" width="88" height="42" aria-hidden="true" focusable="false">
+              <text x="0" y="10.5" textLength="88" lengthAdjust="spacing">Laboratory of</text>
+              <text x="0" y="25" textLength="88" lengthAdjust="spacing">Automation</text>
+              <text x="0" y="39.5" textLength="88" lengthAdjust="spacing">and Robotics</text>
+            </svg>
+          </span>
+        </a>
+        <p>Part of the Department of Electrical, Electronic, and Information Engineering “Guglielmo Marconi” (DEI) at the Alma Mater Studiorum – Università di Bologna.</p>
+        <p class="footer-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Bologna, Italy</p>
+      </div>
+
+      <div class="footer-col">
+        <h2>Explore</h2>
+        <ul>
+            <li><a href="/research/">Research</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/people/">People</a></li>
+            <li><a href="/publications/">Publications</a></li>
+            <li><a href="/deformable_linear_objects/">Deformable Linear Objects</a></li>
+            <li><a href="/human_robot_collaboration/">Human–Robot Collaboration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Affiliations</h2>
+        <ul>
+          <li><a href="https://dei.unibo.it/en/index.html" target="_blank" rel="noopener">Department of Electrical, Electronic, and Information Engineering (DEI)</a></li>
+          <li><a href="https://www.unibo.it/en/homepage" target="_blank" rel="noopener">Alma Mater Studiorum – Università di Bologna</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Code &amp; data</h2>
+        <ul>
+          <li><a class="footer-icon-link" href="https://github.com/lar-unibo/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> github.com/lar-unibo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span data-current-year>2026</span> Laboratory of Automation and Robotics · Università di Bologna</span>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

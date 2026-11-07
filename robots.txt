@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lar-unibo.github.io/sitemap.xml
